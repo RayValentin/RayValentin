@@ -1,78 +1,50 @@
-<h1>Hi, I'm Raymond Valentin 👋</h1>
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=32&pause=900&color=00F7FF&center=true&vCenter=true&width=1000&lines=Raymond+Valentin;AI+Systems+Engineer;Cybersecurity+%7C+Automation+%7C+Infrastructure;Blue+Team+Operations+%7C+GRC+Foundations" />
+</h1>
 
-<h3>Cybersecurity • Security Operations • Automation</h3>
-
-<p>
-Focused on cybersecurity operations, automation, infrastructure, and blue team development.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=00F7FF&height=2" />
 </p>
 
-<hr>
-
-<h2>🛡️ Cybersecurity Projects</h2>
-
-<ul>
-  <li>Security Operations Labs</li>
-  <li>Threat Detection Exercises</li>
-  <li>Blue Team Concepts</li>
-  <li>Infrastructure Security Labs</li>
-  <li>Active Directory Projects</li>
-</ul>
-
-<hr>
-
-<h2>⚙️ Automation Projects</h2>
-
-<ul>
-  <li>PowerShell Automation</li>
-  <li>Workflow Utilities</li>
-  <li>Documentation Automation</li>
-  <li>Operational Efficiency Projects</li>
-</ul>
-
-<hr>
-
-<h2>🌐 Infrastructure & Networking</h2>
-
-<ul>
-  <li>Cisco Networking Labs</li>
-  <li>Firewall Concepts</li>
-  <li>Network Troubleshooting</li>
-  <li>Wireless & VoIP Support</li>
-</ul>
-
-<hr>
-
-<h2>🚀 Currently Learning</h2>
-
-<ul>
-  <li>Security Operations</li>
-  <li>Threat Detection & Analysis</li>
-  <li>Enterprise Automation</li>
-  <li>CISSP Preparation</li>
-</ul>
-
-<hr>
-
-<h2>📺 Content & Branding</h2>
-
-<ul>
-  <li>RayAutonomy</li>
-  <li>Cybersecurity Education</li>
-  <li>AI & Automation Content</li>
-</ul>
-
-<hr>
-
-<h2>🤝 Connect With Me</h2>
-
-<p>
-  <a href="https://www.linkedin.com/in/rayvalentinofficial/">
-    <img src="https://img.shields.io/badge/LinkedIn-Profile-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn">
-  </a>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg" width="100%" />
 </p>
 
-<p>
-  <a href="https://www.youtube.com/@RayAutonomy">
-    <img src="https://img.shields.io/badge/YouTube-Channel-FF0000?style=for-the-badge&logo=youtube" alt="YouTube">
-  </a>
+---
+
+<h2 align="center">⚡ AI Systems • Cybersecurity • Automation • Infrastructure</h2>
+
+<p align="center">
+  Engineering secure systems, building automation pipelines, and developing operational workflows that scale.
 </p>
+
+---
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" height="170" />
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight&hide_border=true" height="170" />
+
+</div>
+
+---
+
+```bash
+raymond@operations:~$ whoami
+AI Systems Engineer
+Cybersecurity & GRC Foundations
+Automation Architect
+Infrastructure Operations
+Local AI Engineering
+```
+
+```yaml
+core_focus:
+  - cybersecurity_operations
+  - workflow_automation
+  - infrastructure_engineering
+  - ai_systems_and_local_models
+  - documentation_pipelines
+```
+
