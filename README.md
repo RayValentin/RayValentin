@@ -1,103 +1,159 @@
-# Hi, I'm Raymond Valentin 👋
+<h1>Hi, I'm Raymond Valentin 👋</h1>
 
-### AI Governance • Cybersecurity • Automation • GRC
+<h3>AI Governance • Cybersecurity • Automation • GRC</h3>
 
+<p>
 Technology professional with 10+ years of experience spanning cybersecurity, governance, automation, infrastructure, and enterprise operations.
+</p>
 
+<p>
 MBA | MS in Cybersecurity | MSIT Candidate (WGU)
+</p>
 
+<p>
 Focused on AI governance, enterprise automation, security operations, and compliance-driven workflow development.
+</p>
 
----
+<hr>
 
-## 💼 Core Competencies
+<h2>💼 Core Competencies</h2>
 
-| Domain | Focus Areas |
-|---|---|
-| Governance & Compliance | GRC, PCI DSS, Risk Analysis, Documentation |
-| Cybersecurity | Security Operations, Infrastructure Security |
-| Automation | PowerShell, Workflow Automation, Operational Efficiency |
-| AI Systems | AI Governance, Local AI Workflows, AI-Assisted Processes |
-| Infrastructure | Cisco Networking, VoIP, Wireless, Firewalls |
-| Leadership | Technical Communication, Strategy, Operations |
+<table>
+  <tr>
+    <th>Domain</th>
+    <th>Focus Areas</th>
+  </tr>
+  <tr>
+    <td>Governance &amp; Compliance</td>
+    <td>GRC, PCI DSS, Risk Analysis, Documentation</td>
+  </tr>
+  <tr>
+    <td>Cybersecurity</td>
+    <td>Security Operations, Infrastructure Security</td>
+  </tr>
+  <tr>
+    <td>Automation</td>
+    <td>PowerShell, Workflow Automation, Operational Efficiency</td>
+  </tr>
+  <tr>
+    <td>AI Systems</td>
+    <td>AI Governance, Local AI Workflows, AI-Assisted Processes</td>
+  </tr>
+  <tr>
+    <td>Infrastructure</td>
+    <td>Cisco Networking, VoIP, Wireless, Firewalls</td>
+  </tr>
+  <tr>
+    <td>Leadership</td>
+    <td>Technical Communication, Strategy, Operations</td>
+  </tr>
+</table>
 
----
+<hr>
 
-## 🛡️ Cybersecurity & Governance
+<h2>🛡️ Cybersecurity &amp; Governance</h2>
 
-- Governance, Risk & Compliance (GRC)
-- AI Governance & Oversight
-- Security Operations
-- Risk Analysis & Reporting
-- Technical Documentation
-- HIPAA-Aligned Workflow Design
-- Infrastructure Security
+<ul>
+  <li>Governance, Risk &amp; Compliance (GRC)</li>
+  <li>AI Governance &amp; Oversight</li>
+  <li>Security Operations</li>
+  <li>Risk Analysis &amp; Reporting</li>
+  <li>Technical Documentation</li>
+  <li>HIPAA-Aligned Workflow Design</li>
+  <li>Infrastructure Security</li>
+</ul>
 
----
+<hr>
 
-## ⚙️ Automation & Infrastructure
+<h2>⚙️ Automation &amp; Infrastructure</h2>
 
-### Automation
-- Workflow Automation
-- Documentation Automation
-- Operational Process Optimization
-- System Utility Development
+<h3>Automation</h3>
+<ul>
+  <li>Workflow Automation</li>
+  <li>Documentation Automation</li>
+  <li>Operational Process Optimization</li>
+  <li>System Utility Development</li>
+</ul>
 
-### AI Systems
-- Local AI Workflows
-- AI-Assisted Documentation Systems
-- Secure AI Workflow Development
-- AI Process Integration
+<h3>AI Systems</h3>
+<ul>
+  <li>Local AI Workflows</li>
+  <li>AI-Assisted Documentation Systems</li>
+  <li>Secure AI Workflow Development</li>
+  <li>AI Process Integration</li>
+</ul>
 
-### Infrastructure
-- Cisco Networking
-- Wireless & VoIP Support
-- Firewall Administration
-- Network Troubleshooting
-- Systems Operations
+<h3>Infrastructure</h3>
+<ul>
+  <li>Cisco Networking</li>
+  <li>Wireless &amp; VoIP Support</li>
+  <li>Firewall Administration</li>
+  <li>Network Troubleshooting</li>
+  <li>Systems Operations</li>
+</ul>
 
----
+<hr>
 
-## 🎓 Education & Certifications
+<h2>🎓 Education &amp; Certifications</h2>
 
-### Degrees
-- MBA
-- MS in Cybersecurity
-- MSIT Candidate (WGU)
+<h3>Degrees</h3>
+<ul>
+  <li>MBA</li>
+  <li>MS in Cybersecurity</li>
+  <li>MSIT Candidate (WGU)</li>
+</ul>
 
-### Certifications
-- Security+
-- Network+
-- A+
-- CEH
-- CHFI
+<h3>Certifications</h3>
+<ul>
+  <li>Security+</li>
+  <li>Network+</li>
+  <li>A+</li>
+  <li>CEH</li>
+  <li>CHFI</li>
+</ul>
 
----
+<hr>
 
-## 🚀 Current Focus
+<h2>🚀 Current Focus</h2>
 
-- CISSP Preparation
-- AI Governance
-- Enterprise Automation
-- Security & Compliance Strategy
-- Secure AI Workflows
-- Technical Leadership
+<ul>
+  <li>CISSP Preparation</li>
+  <li>AI Governance</li>
+  <li>Enterprise Automation</li>
+  <li>Security &amp; Compliance Strategy</li>
+  <li>Secure AI Workflows</li>
+  <li>Technical Leadership</li>
+</ul>
 
----
+<hr>
 
-## 📺 Content & Branding
+<h2>📺 Content &amp; Branding</h2>
 
-- RayAutonomy
-- AI & Automation Content
-- Cybersecurity Education
-- Technical Workflow Development
+<ul>
+  <li>RayAutonomy</li>
+  <li>AI &amp; Automation Content</li>
+  <li>Cybersecurity Education</li>
+  <li>Technical Workflow Development</li>
+</ul>
 
----
+<hr>
 
-## 🤝 Connect With Me
+<h2>🤝 Connect With Me</h2>
 
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github)](https://github.com/RayValentin)
+<p>
+  <a href="https://github.com/RayValentin" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+</p>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/rayvalentinofficial/)
+<p>
+  <a href="https://www.linkedin.com/in/rayvalentinofficial/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Profile-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn">
+  </a>
+</p>
 
-[![YouTube](https://img.shields.io/badge/YouTube-Channel-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@RayAutonomy)
+<p>
+  <a href="https://www.youtube.com/@RayAutonomy" target="_blank">
+    <img src="https://img.shields.io/badge/YouTube-Channel-FF0000?style=for-the-badge&logo=youtube" alt="YouTube">
+  </a>
+</p>
