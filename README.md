@@ -54,6 +54,13 @@ Focused on security operations, enterprise automation, and governance-driven tec
 ## 🤝 Connect With Me
 
 <p>
+  <a href="https://www.youtube.com/@RayAutonomy">
+    <img src="https://img.shields.io/badge/YouTube-Channel-FF0000?style=for-the-badge&logo=youtube">
+  </a>
+</p>
+
+
+<p>
   <a href="https://www.linkedin.com/in/rayvalentinofficial/">
     <img src="https://img.shields.io/badge/LinkedIn-Profile-0077B5?style=for-the-badge&logo=linkedin">
   </a>
@@ -65,9 +72,4 @@ Focused on security operations, enterprise automation, and governance-driven tec
   </a>
 </p>
 
-<p>
-  <a href="https://www.youtube.com/@RayAutonomy">
-    <img src="https://img.shields.io/badge/YouTube-Channel-FF0000?style=for-the-badge&logo=youtube">
-  </a>
-</p>
 
