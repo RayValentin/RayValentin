@@ -1,72 +1,39 @@
-# Hi, I'm Raymond Valentin 👋
+<h1>Hi, I'm Raymond Valentin 👋</h1>
 
-### Cybersecurity • Security Operations • Automation • GRC
+<h3>Cybersecurity • Security Operations • Automation</h3>
 
-Technology professional with over 10 years of experience across cybersecurity, governance, automation, and infrastructure.
+<hr>
 
-MBA | MS Cybersecurity | MSIT Candidate (WGU)
+<h2>🛡️ Cybersecurity Projects</h2>
 
-Focused on security operations, enterprise automation, and governance-driven technical solutions.
+<ul>
+  <li>Security Operations Labs</li>
+  <li>Threat Detection Exercises</li>
+  <li>Active Directory Labs</li>
+  <li>Blue Team Concepts</li>
+</ul>
 
----
+<h2>⚙️ Automation Projects</h2>
 
-## 💼 Core Competencies
-- Security Operations & Infrastructure Security  
-- Governance, Risk & Compliance (GRC)  
-- PowerShell & Workflow Automation  
-- AI Governance & Local AI Systems  
-- Cisco Networking, VoIP, Wireless, Firewalls  
-- Technical Communication & Leadership  
+<ul>
+  <li>PowerShell Automation</li>
+  <li>Workflow Utilities</li>
+  <li>Documentation Automation</li>
+</ul>
 
----
+<h2>🌐 Infrastructure & Networking</h2>
 
-## 🛡️ Cybersecurity & Governance
-- Blue Team Concepts  
-- Risk Analysis & Reporting  
-- Technical Documentation  
-- HIPAA‑Aligned Workflow Design  
-- AI Governance & Oversight  
+<ul>
+  <li>Cisco Networking Labs</li>
+  <li>Firewall Concepts</li>
+  <li>Network Troubleshooting</li>
+</ul>
 
----
+<h2>🚀 Currently Learning</h2>
 
-## ⚙️ Automation & Infrastructure
-- Workflow & Documentation Automation  
-- Operational Efficiency Tools  
-- System Utility Development  
-- Network Troubleshooting & Systems Operations  
-
----
-
-## 🎓 Education & Certifications
-**Degrees:** MBA • MS Cybersecurity • MSIT (WGU)  
-**Certs:** Security+ • Network+ • A+ • CEH • CHFI  
-
----
-
-## 🚀 Current Focus
-- CISSP Preparation  
-- Security Operations  
-- Enterprise Automation  
-- Secure AI Workflows  
-
----
-
-## 🤝 Connect With Me
-
-<p>
-  <a href="https://github.com/RayValentin">
-    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github">
-  </a>
-</p>
-
-<p>
-  <a href="https://www.linkedin.com/in/rayvalentinofficial/">
-    <img src="https://img.shields.io/badge/LinkedIn-Profile-0077B5?style=for-the-badge&logo=linkedin">
-  </a>
-</p>
-
-<p>
-  <a href="https://www.youtube.com/@RayAutonomy">
-    <img src="https://img.shields.io/badge/YouTube-Channel-FF0000?style=for-the-badge&logo=youtube">
-  </a>
-</p>
+<ul>
+  <li>Security Operations</li>
+  <li>Threat Detection & Analysis</li>
+  <li>Enterprise Automation</li>
+  <li>CISSP Preparation</li>
+</ul>
