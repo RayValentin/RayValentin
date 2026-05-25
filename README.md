@@ -1,49 +1,64 @@
-# Hi, I'm Raymond Valentin! 👋
+# Hi, I'm Raymond Valentin 👋
 
-## AI Governance | Cybersecurity | Automation | GRC
+### AI Governance • Cybersecurity • Automation • GRC
 
-Technology professional with 10+ years of experience spanning cybersecurity, infrastructure, governance, networking, automation, and operational support.
+Technology professional with 10+ years of experience spanning cybersecurity, governance, automation, infrastructure, and enterprise operations.
+
+MBA | MS in Cybersecurity | MSIT Candidate (WGU)
+
+Focused on AI governance, enterprise automation, security operations, and compliance-driven workflow development.
 
 ---
 
-# 🛡️ Cybersecurity & Governance
+## 💼 Core Competencies
 
-- Governance, Risk, and Compliance (GRC)
+| Domain | Focus Areas |
+|---|---|
+| Governance & Compliance | GRC, PCI DSS, Risk Analysis, Documentation |
+| Cybersecurity | Security Operations, Infrastructure Security |
+| Automation | PowerShell, Workflow Automation, Operational Efficiency |
+| AI Systems | AI Governance, Local AI Workflows, AI-Assisted Processes |
+| Infrastructure | Cisco Networking, VoIP, Wireless, Firewalls |
+| Leadership | Technical Communication, Strategy, Operations |
+
+---
+
+## 🛡️ Cybersecurity & Governance
+
+- Governance, Risk & Compliance (GRC)
 - AI Governance & Oversight
 - Security Operations
-- PCI DSS Support
-- Risk Analysis
+- Risk Analysis & Reporting
 - Technical Documentation
-- HIPAA-Aware Workflows
+- HIPAA-Aligned Workflow Design
+- Infrastructure Security
 
 ---
 
-# ⚙️ Automation & Infrastructure Projects
+## ⚙️ Automation & Infrastructure
 
-### PowerShell
-- Windows Automation Workflows
-- Audit & Documentation Automation
-- Printer Spooler Utilities
-- PDF Conversion Pipelines
-- Folder Organization Scripts
+### Automation
+- Workflow Automation
+- Documentation Automation
+- Operational Process Optimization
+- System Utility Development
 
-### AI & Automation
-- LM Studio Local AI Workflows
-- n8n Automation Pipelines
-- AI PDF Processing Systems
-- HIPAA-Conscious AI Documentation Systems
-- Local AI Infrastructure
+### AI Systems
+- Local AI Workflows
+- AI-Assisted Documentation Systems
+- Secure AI Workflow Development
+- AI Process Integration
 
 ### Infrastructure
 - Cisco Networking
 - Wireless & VoIP Support
 - Firewall Administration
-- System Troubleshooting
-- Network Operations
+- Network Troubleshooting
+- Systems Operations
 
 ---
 
-# 🎓 Education & Certifications
+## 🎓 Education & Certifications
 
 ### Degrees
 - MBA
@@ -59,17 +74,18 @@ Technology professional with 10+ years of experience spanning cybersecurity, inf
 
 ---
 
-# 🚀 Current Focus
+## 🚀 Current Focus
 
 - CISSP Preparation
-- Enterprise Automation
 - AI Governance
-- Secure AI Workflows
+- Enterprise Automation
 - Security & Compliance Strategy
+- Secure AI Workflows
+- Technical Leadership
 
 ---
 
-# 📺 Content & Branding
+## 📺 Content & Branding
 
 - RayAutonomy
 - AI & Automation Content
@@ -78,8 +94,8 @@ Technology professional with 10+ years of experience spanning cybersecurity, inf
 
 ---
 
-# 🤝 Connect With Me
+## 🤝 Connect With Me
 
-- LinkedIn
-- GitHub Projects
-- YouTube
+- GitHub: https://github.com/RayValentin
+- LinkedIn: https://www.linkedin.com/in/rayvalentinofficial/
+- YouTube: https://www.youtube.com/@RayAutonomy
