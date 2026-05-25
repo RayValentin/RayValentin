@@ -2,7 +2,7 @@
 
 ### Cybersecurity • Security Operations • Automation • GRC
 
-Technology professional with 15+ years of experience across cybersecurity, governance, automation, and infrastructure.
+Technology professional with over 10 years of experience across cybersecurity, governance, automation, and infrastructure.
 
 MBA | MS Cybersecurity | MSIT Candidate (WGU)
 
