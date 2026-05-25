@@ -65,8 +65,6 @@ Focused on cybersecurity operations, automation, infrastructure, and blue team d
 
 <h2>🤝 Connect With Me</h2>
 
-<h2>🤝 Connect With Me</h2>
-
 <p>
   <a href="https://github.com/RayValentin">
     <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github" alt="GitHub">
