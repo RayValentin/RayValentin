@@ -96,6 +96,8 @@ Focused on AI governance, enterprise automation, security operations, and compli
 
 ## 🤝 Connect With Me
 
-- GitHub: https://github.com/RayValentin
-- LinkedIn: https://www.linkedin.com/in/rayvalentinofficial/
-- YouTube: https://www.youtube.com/@RayAutonomy
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github)](https://github.com/RayValentin)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/rayvalentinofficial/)
+
+[![YouTube](https://img.shields.io/badge/YouTube-Channel-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@RayAutonomy)
