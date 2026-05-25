@@ -53,6 +53,23 @@ Focused on security operations, enterprise automation, and governance-driven tec
 
 ## 🤝 Connect With Me
 
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github)](https://github.com/RayValentin)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/rayvalentinofficial/)
-[![YouTube](https://img.shields.io/badge/YouTube-Channel-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@RayAutonomy)
+## 🤝 Connect With Me
+
+<p>
+  <a href="https://github.com/RayValentin">
+    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github">
+  </a>
+</p>
+
+<p>
+  <a href="https://www.linkedin.com/in/rayvalentinofficial/">
+    <img src="https://img.shields.io/badge/LinkedIn-Profile-0077B5?style=for-the-badge&logo=linkedin">
+  </a>
+</p>
+
+<p>
+  <a href="https://www.youtube.com/@RayAutonomy">
+    <img src="https://img.shields.io/badge/YouTube-Channel-FF0000?style=for-the-badge&logo=youtube">
+  </a>
+</p>
+
