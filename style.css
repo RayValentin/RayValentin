@@ -2689,3 +2689,620 @@ footer strong {
     }
 
 }
+/* ================================================================
+   RAYAUTONOMY — HIGH READABILITY MODE
+   ================================================================ */
+
+
+/* ---------- Overall site width ---------- */
+
+:root {
+    --max-width: 1280px;
+}
+
+body {
+    font-size: 18px;
+}
+
+.site-shell {
+    width: min(1280px, calc(100% - 30px));
+}
+
+
+/* ---------- Navigation ---------- */
+
+.topbar {
+    min-height: 82px;
+}
+
+.brand-copy strong {
+    font-size: 18px;
+}
+
+.brand-copy span {
+    font-size: 11px;
+}
+
+.nav-link {
+    font-size: 15px;
+    padding: 12px 14px;
+}
+
+.availability {
+    font-size: 12px;
+}
+
+
+/* ---------- Technical section labels ---------- */
+
+.section-label,
+.section-kicker,
+.panel-eyebrow {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero {
+    min-height: 620px;
+
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(400px, 0.85fr);
+
+    padding: 70px 55px;
+}
+
+.hero-introduction {
+    font-size: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(64px, 6vw, 94px);
+}
+
+.hero h2 {
+    font-size: 20px;
+}
+
+.hero-statement span {
+    font-size: 14px;
+}
+
+.hero-description {
+    max-width: 720px;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.button {
+    min-height: 50px;
+
+    padding: 0 22px;
+
+    font-size: 15px;
+}
+
+
+/* ---------- Terminal ---------- */
+
+.terminal-window {
+    min-width: 400px;
+}
+
+.terminal-title {
+    font-size: 12px;
+}
+
+.terminal-status {
+    font-size: 11px;
+}
+
+.terminal-body {
+    min-height: 380px;
+
+    padding: 27px;
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* ---------- SOC / NET / AWS / AUTO / AI ---------- */
+
+.status-grid {
+    gap: 14px;
+}
+
+.status-card {
+    min-height: 160px;
+
+    padding: 24px;
+}
+
+.status-card-label {
+    font-size: 12px;
+}
+
+.status-card strong {
+    margin: 11px 0 8px;
+
+    font-size: 36px;
+}
+
+.status-card-description {
+    font-size: 14px;
+}
+
+
+/* ---------- Section headings ---------- */
+
+.section-heading {
+    padding: 34px;
+}
+
+.section-heading h2 {
+    font-size: clamp(30px, 3vw, 40px);
+}
+
+.section-heading p {
+    max-width: 470px;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* ---------- Command Center ---------- */
+
+.operations-grid {
+    grid-template-columns:
+        1fr 1.25fr;
+
+    gap: 18px;
+
+    padding: 24px;
+}
+
+
+/*
+   Make topology the full-width centerpiece.
+*/
+
+.topology-panel {
+    grid-column: 1 / -1;
+    grid-row: 2;
+
+    min-height: 480px;
+}
+
+.topology {
+    height: 390px;
+}
+
+.panel-header {
+    min-height: 84px;
+
+    padding: 18px 22px;
+}
+
+.panel-header h3 {
+    font-size: 19px;
+}
+
+.panel-badge {
+    font-size: 12px;
+}
+
+.live-indicator {
+    font-size: 12px;
+}
+
+.domain-list {
+    padding: 10px 22px 20px;
+}
+
+.domain-row {
+    min-height: 62px;
+
+    font-size: 15px;
+}
+
+.domain-row strong {
+    font-size: 11px;
+}
+
+
+/* ---------- Topology ---------- */
+
+.topology-node {
+    width: 58px;
+    height: 58px;
+
+    font-size: 11px;
+}
+
+.topology-center {
+    width: 82px;
+    height: 82px;
+
+    font-size: 14px;
+}
+
+
+/* ---------- Projects ---------- */
+
+.projects-list {
+    padding: 5px 28px 15px;
+}
+
+.project-row {
+    min-height: 170px;
+
+    grid-template-columns:
+        55px
+        minmax(300px, 1fr)
+        minmax(180px, 0.55fr)
+        105px
+        30px;
+
+    gap: 22px;
+
+    padding: 22px 6px;
+}
+
+.project-number {
+    font-size: 14px;
+}
+
+.project-category {
+    font-size: 12px;
+}
+
+.project-main h3 {
+    margin: 8px 0;
+
+    font-size: 21px;
+}
+
+.project-main p {
+    max-width: 620px;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.project-stack {
+    gap: 7px;
+}
+
+.project-stack span {
+    padding: 7px 10px;
+
+    font-size: 12px;
+}
+
+.project-status {
+    padding: 7px 10px;
+
+    font-size: 11px;
+}
+
+.project-arrow {
+    font-size: 22px;
+}
+
+
+/* ---------- Technology Stack ---------- */
+
+.technology-grid {
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 14px;
+
+    padding: 28px;
+}
+
+.technology-card {
+    min-height: 155px;
+
+    gap: 9px;
+}
+
+.technology-icon {
+    font-size: 25px;
+}
+
+.technology-card strong {
+    font-size: 16px;
+}
+
+.technology-card > span:last-child {
+    font-size: 13px;
+}
+
+
+/* ---------- Education / Certifications ---------- */
+
+.credentials-grid {
+    gap: 20px;
+
+    padding: 25px;
+}
+
+.credential-panel .panel-header {
+    min-height: 90px;
+}
+
+.credential-list {
+    padding: 10px 22px 20px;
+}
+
+.credential-row {
+    min-height: 96px;
+}
+
+.credential-row strong {
+    font-size: 16px;
+}
+
+.credential-row div span {
+    margin-top: 3px;
+
+    font-size: 13px;
+}
+
+.credential-state {
+    padding: 7px 10px;
+
+    font-size: 11px;
+}
+
+
+/* ---------- About ---------- */
+
+.about-layout {
+    gap: 45px;
+
+    padding: 50px 42px;
+}
+
+.about-content h2 {
+    font-size: clamp(38px, 4vw, 54px);
+}
+
+.about-content p {
+    max-width: 760px;
+
+    font-size: 17px;
+    line-height: 1.85;
+}
+
+.profile-panel-header {
+    padding: 18px 20px;
+
+    font-size: 12px;
+}
+
+.profile-data {
+    padding: 10px 20px 20px;
+}
+
+.profile-data div {
+    min-height: 70px;
+}
+
+.profile-data span {
+    font-size: 11px;
+}
+
+.profile-data strong {
+    font-size: 14px;
+}
+
+
+/* ---------- Contact ---------- */
+
+.contact-section {
+    min-height: 270px;
+
+    padding: 50px 42px;
+}
+
+.contact-section h2 {
+    font-size: 44px;
+}
+
+.contact-section p {
+    font-size: 16px;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    min-height: 95px;
+
+    font-size: 12px;
+}
+
+
+/* ================================================================
+   LAPTOP
+   ================================================================ */
+
+@media (max-width: 1100px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .terminal-window {
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+    }
+
+    .status-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .technology-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .project-row {
+        grid-template-columns:
+            45px
+            minmax(250px, 1fr)
+            105px
+            25px;
+    }
+
+    .project-stack {
+        display: none;
+    }
+}
+
+
+/* ================================================================
+   TABLET
+   ================================================================ */
+
+@media (max-width: 850px) {
+
+    .status-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .status-card:last-child {
+        grid-column: span 2;
+    }
+
+    .operations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topology-panel {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .technology-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .credentials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .project-row {
+        grid-template-columns:
+            40px
+            minmax(0, 1fr)
+            25px;
+    }
+
+    .project-status {
+        display: none;
+    }
+}
+
+
+/* ================================================================
+   MOBILE
+   ================================================================ */
+
+@media (max-width: 700px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .site-shell {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 45px 23px;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 15vw, 70px);
+    }
+
+    .hero h2 {
+        font-size: 17px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .terminal-body {
+        font-size: 13px;
+    }
+
+    .status-card-label {
+        font-size: 11px;
+    }
+
+    .status-card-description {
+        font-size: 13px;
+    }
+
+    .section-heading {
+        padding: 26px 22px;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+    .domain-row {
+        font-size: 14px;
+    }
+
+    .project-main h3 {
+        font-size: 18px;
+    }
+
+    .project-main p {
+        font-size: 14px;
+    }
+
+    .technology-card strong {
+        font-size: 15px;
+    }
+
+    .technology-card > span:last-child {
+        font-size: 12px;
+    }
+
+    .credential-row strong {
+        font-size: 14px;
+    }
+
+    .credential-row div span {
+        font-size: 12px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .contact-section p {
+        font-size: 15px;
+    }
+}
