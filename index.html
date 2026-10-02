@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- =========================================================
-         RAYAUTONOMY
-         Raymond Valentin - Professional Technology Portfolio
-         ========================================================= -->
-
     <meta charset="UTF-8">
 
     <meta
@@ -16,211 +10,1769 @@
 
     <meta
         name="description"
-        content="Raymond Valentin's professional portfolio showcasing hands-on cybersecurity, security operations, network engineering, cloud, automation, and AI projects."
+        content="Raymond Valentin — Cybersecurity, networking, cloud, infrastructure, automation and AI portfolio."
     >
 
-    <meta
-        name="author"
-        content="Raymond Valentin"
-    >
+    <title>Raymond Valentin | RayAutonomy</title>
 
-    <meta
-        name="theme-color"
-        content="#070b11"
-    >
+    <style>
 
-    <!-- Open Graph -->
-    <meta
-        property="og:title"
-        content="RayAutonomy | Raymond Valentin"
-    >
+        /* =========================================================
+           RAYAUTONOMY
+           SINGLE-FILE PROFESSIONAL PORTFOLIO
+           ========================================================= */
 
-    <meta
-        property="og:description"
-        content="Cybersecurity, Network Engineering, Cloud, Automation and AI portfolio."
-    >
+        :root {
+            --bg: #060a10;
+            --bg-soft: #0a1019;
+            --panel: #0d1520;
+            --panel-hover: #111c29;
 
-    <meta
-        property="og:type"
-        content="website"
-    >
+            --border: rgba(148, 163, 184, 0.17);
+            --border-bright: rgba(56, 189, 248, 0.38);
 
-    <meta
-        property="og:url"
-        content="https://rayautonomy.com"
-    >
+            --text: #f5f8fc;
+            --text-soft: #c5d0dc;
+            --muted: #8f9dad;
 
-    <title>
-        RayAutonomy | Raymond Valentin
-    </title>
+            --blue: #38bdf8;
+            --blue-strong: #3b82f6;
+            --purple: #8b5cf6;
+            --green: #34d399;
 
-    <!-- Main Stylesheet -->
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+            --gradient:
+                linear-gradient(
+                    120deg,
+                    #3b82f6,
+                    #38bdf8 48%,
+                    #8b5cf6
+                );
+
+            --max-width: 1240px;
+            --radius: 18px;
+        }
+
+
+        /* =========================================================
+           RESET
+           ========================================================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+
+        body {
+            margin: 0;
+
+            background:
+                radial-gradient(
+                    circle at 10% 5%,
+                    rgba(59, 130, 246, 0.12),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 90% 10%,
+                    rgba(139, 92, 246, 0.10),
+                    transparent 26%
+                ),
+                var(--bg);
+
+            color: var(--text);
+
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            font-size: 18px;
+            line-height: 1.7;
+
+            overflow-x: hidden;
+
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body::before {
+            content: "";
+
+            position: fixed;
+            inset: 0;
+
+            z-index: -2;
+
+            pointer-events: none;
+
+            opacity: 0.18;
+
+            background-image:
+                linear-gradient(
+                    rgba(56, 189, 248, 0.06) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(56, 189, 248, 0.06) 1px,
+                    transparent 1px
+                );
+
+            background-size: 60px 60px;
+
+            mask-image:
+                linear-gradient(
+                    to bottom,
+                    black,
+                    transparent 85%
+                );
+        }
+
+        body::after {
+            content: "";
+
+            position: fixed;
+
+            width: 700px;
+            height: 700px;
+
+            left: var(--mouse-x, 50%);
+            top: var(--mouse-y, 25%);
+
+            transform: translate(-50%, -50%);
+
+            z-index: -1;
+
+            pointer-events: none;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(56, 189, 248, 0.055),
+                    transparent 65%
+                );
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font: inherit;
+        }
+
+        ::selection {
+            background: rgba(56, 189, 248, 0.35);
+            color: white;
+        }
+
+
+        /* =========================================================
+           GLOBAL LAYOUT
+           ========================================================= */
+
+        .container {
+            width: min(var(--max-width), calc(100% - 48px));
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 105px 0;
+        }
+
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            margin-bottom: 15px;
+
+            color: var(--blue);
+
+            font-family:
+                "Courier New",
+                monospace;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            letter-spacing: 1.7px;
+
+            text-transform: uppercase;
+        }
+
+        .section-tag::before {
+            content: "";
+
+            width: 28px;
+            height: 2px;
+
+            background: var(--blue);
+
+            box-shadow: 0 0 12px var(--blue);
+        }
+
+        .section-title {
+            max-width: 850px;
+
+            margin: 0;
+
+            font-size:
+                clamp(
+                    40px,
+                    5vw,
+                    64px
+                );
+
+            line-height: 1.05;
+
+            letter-spacing: -2px;
+        }
+
+        .section-intro {
+            max-width: 760px;
+
+            margin: 22px 0 0;
+
+            color: var(--text-soft);
+
+            font-size: 19px;
+            line-height: 1.8;
+        }
+
+
+        /* =========================================================
+           NAVIGATION
+           ========================================================= */
+
+        header {
+            position: sticky;
+            top: 0;
+
+            z-index: 1000;
+
+            border-bottom:
+                1px solid var(--border);
+
+            background:
+                rgba(6, 10, 16, 0.88);
+
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .nav {
+            min-height: 84px;
+
+            display: flex;
+            align-items: center;
+
+            gap: 35px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+
+            gap: 13px;
+
+            margin-right: auto;
+        }
+
+        .logo {
+            width: 46px;
+            height: 46px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 12px;
+
+            background: var(--gradient);
+
+            color: white;
+
+            font-size: 15px;
+            font-weight: 900;
+
+            box-shadow:
+                0 0 30px rgba(59, 130, 246, 0.22);
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+
+            line-height: 1.15;
+        }
+
+        .brand-text strong {
+            font-size: 18px;
+
+            letter-spacing: 1px;
+        }
+
+        .brand-text span {
+            margin-top: 5px;
+
+            color: var(--muted);
+
+            font-family:
+                "Courier New",
+                monospace;
+
+            font-size: 12px;
+
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+
+            gap: 26px;
+        }
+
+        nav a {
+            position: relative;
+
+            color: #aeb9c7;
+
+            font-size: 15px;
+            font-weight: 600;
+
+            transition:
+                color 200ms ease;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        nav a::after {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            bottom: -9px;
+
+            width: 0;
+            height: 2px;
+
+            background: var(--blue);
+
+            transition:
+                width 200ms ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .availability {
+            display: flex;
+            align-items: center;
+
+            gap: 9px;
+
+            margin-left: 8px;
+
+            color: #aeb9c7;
+
+            font-family:
+                "Courier New",
+                monospace;
+
+            font-size: 12px;
+
+            white-space: nowrap;
+        }
+
+        .availability-dot {
+            width: 9px;
+            height: 9px;
+
+            border-radius: 50%;
+
+            background: var(--green);
+
+            box-shadow:
+                0 0 12px var(--green);
+
+            animation:
+                pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            50% {
+                opacity: 0.4;
+            }
+        }
+
+        .menu-button {
+            display: none;
+
+            width: 45px;
+            height: 45px;
+
+            align-items: center;
+            justify-content: center;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 10px;
+
+            color: white;
+
+            background:
+                rgba(255,255,255,0.03);
+
+            cursor: pointer;
+
+            font-size: 23px;
+        }
+
+
+        /* =========================================================
+           HERO
+           ========================================================= */
+
+        .hero {
+            min-height:
+                calc(100vh - 84px);
+
+            display: flex;
+            align-items: center;
+
+            padding: 90px 0;
+        }
+
+        .hero-grid {
+            width: 100%;
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1.3fr)
+                minmax(340px, 0.7fr);
+
+            align-items: center;
+
+            gap: 70px;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 9px 14px;
+
+            margin-bottom: 27px;
+
+            border:
+                1px solid rgba(56,189,248,0.20);
+
+            border-radius: 999px;
+
+            color: #bcecff;
+
+            background:
+                rgba(56,189,248,0.055);
+
+            font-family:
+                "Courier New",
+                monospace;
+
+            font-size: 13px;
+
+            letter-spacing: 1px;
+        }
+
+        .hero-tag span {
+            width: 8px;
+            height: 8px;
+
+            border-radius: 50%;
+
+            background: var(--green);
+
+            box-shadow:
+                0 0 10px var(--green);
+        }
+
+        .hero h1 {
+            margin: 0;
+
+            font-size:
+                clamp(
+                    70px,
+                    8vw,
+                    118px
+                );
+
+            line-height: 0.88;
+
+            letter-spacing: -6px;
+
+            font-weight: 850;
+        }
+
+        .hero h1 span {
+            display: block;
+
+            background:
+                linear-gradient(
+                    100deg,
+                    #ffffff,
+                    #d9f5ff 50%,
+                    #8bdcff 72%,
+                    #a78bfa
+                );
+
+            background-clip: text;
+            -webkit-background-clip: text;
+
+            color: transparent;
+        }
+
+        .hero-role {
+            margin-top: 35px;
+
+            color: #dce5ee;
+
+            font-size:
+                clamp(
+                    23px,
+                    2.3vw,
+                    32px
+                );
+
+            font-weight: 600;
+        }
+
+        .hero-description {
+            max-width: 760px;
+
+            margin-top: 22px;
+
+            color: var(--text-soft);
+
+            font-size: 19px;
+            line-height: 1.85;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 13px;
+
+            margin-top: 34px;
+        }
+
+        .btn {
+            min-height: 54px;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 9px;
+
+            padding: 0 23px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 10px;
+
+            color: white;
+
+            background:
+                rgba(255,255,255,0.03);
+
+            font-size: 16px;
+            font-weight: 700;
+
+            transition:
+                transform 200ms ease,
+                border-color 200ms ease,
+                background 200ms ease,
+                box-shadow 200ms ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+
+            border-color:
+                rgba(56,189,248,0.45);
+
+            background:
+                rgba(56,189,248,0.07);
+
+            box-shadow:
+                0 15px 40px rgba(0,0,0,0.25);
+        }
+
+        .btn-primary {
+            border-color: transparent;
+
+            background: var(--gradient);
+
+            box-shadow:
+                0 12px 35px rgba(59,130,246,0.23);
+        }
+
+        .btn-primary:hover {
+            border-color: transparent;
+
+            background: var(--gradient);
+
+            box-shadow:
+                0 17px 45px rgba(59,130,246,0.32);
+        }
+
+
+        /* =========================================================
+           HERO PROFILE CARD
+           ========================================================= */
+
+        .hero-card {
+            position: relative;
+
+            padding: 34px;
+
+            overflow: hidden;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 22px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(15,24,36,0.96),
+                    rgba(8,14,22,0.96)
+                );
+
+            box-shadow:
+                0 30px 90px rgba(0,0,0,0.35);
+        }
+
+        .hero-card::before {
+            content: "";
+
+            position: absolute;
+
+            width: 260px;
+            height: 260px;
+
+            right: -100px;
+            top: -100px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(56,189,248,0.15),
+                    transparent 70%
+                );
+        }
+
+        .card-label {
+            position: relative;
+
+            color: var(--blue);
+
+            font-family:
+                "Courier New",
+                monospace;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            letter-spacing: 1.3px;
+        }
+
+        .hero-card h2 {
+            position: relative;
+
+            margin: 15px 0 8px;
+
+            font-size: 31px;
+        }
+
+        .hero-card > p {
+            position: relative;
+
+            margin: 0 0 26px;
+
+            color: var(--muted);
+
+            font-size: 16px;
+        }
+
+        .profile-item {
+            position: relative;
+
+            padding: 18px 0;
+
+            border-top:
+                1px solid var(--border);
+        }
+
+        .profile-item span {
+            display: block;
+
+            margin-bottom: 5px;
+
+            color: var(--muted);
+
+            font-family:
+                "Courier New",
+                monospace;
+
+            font-size: 13px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+        }
+
+        .profile-item strong {
+            font-size: 17px;
+        }
+
+        .online {
+            color: var(--green);
+        }
+
+
+        /* =========================================================
+           QUICK CAPABILITIES
+           ========================================================= */
+
+        .capabilities {
+            padding-top: 0;
+        }
+
+        .capability-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 16px;
+        }
+
+        .capability {
+            min-height: 190px;
+
+            padding: 27px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 16px;
+
+            background:
+                rgba(13,21,32,0.78);
+
+            transition:
+                transform 220ms ease,
+                border-color 220ms ease,
+                background 220ms ease;
+        }
+
+        .capability:hover {
+            transform: translateY(-5px);
+
+            border-color:
+                var(--border-bright);
+
+            background:
+                var(--panel-hover);
+        }
+
+        .capability-number {
+            color: var(--blue);
+
+            font-family:
+                "Courier New",
+                monospace;
+
+            font-size: 14px;
+
+            font-weight: 700;
+        }
+
+        .capability h3 {
+            margin: 25px 0 10px;
+
+            font-size: 22px;
+        }
+
+        .capability p {
+            margin: 0;
+
+            color: var(--muted);
+
+            font-size: 16px;
+            line-height: 1.65;
+        }
+
+
+        /* =========================================================
+           PROJECTS
+           ========================================================= */
+
+        .projects {
+            border-top:
+                1px solid var(--border);
+
+            border-bottom:
+                1px solid var(--border);
+
+            background:
+                rgba(8,13,21,0.45);
+        }
+
+        .project-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 20px;
+
+            margin-top: 55px;
+        }
+
+        .project-card {
+            position: relative;
+
+            min-height: 400px;
+
+            display: flex;
+            flex-direction: column;
+
+            padding: 36px;
+
+            overflow: hidden;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 19px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(15,24,36,0.94),
+                    rgba(8,14,22,0.96)
+                );
+
+            transition:
+                transform 220ms ease,
+                border-color 220ms ease,
+                box-shadow 220ms ease;
+        }
+
+        .project-card::before {
+            content: "";
+
+            position: absolute;
+
+            width: 230px;
+            height: 230px;
+
+            right: -120px;
+            top: -120px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(56,189,248,0.11),
+                    transparent 70%
+                );
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+
+            border-color:
+                var(--border-bright);
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,0.30);
+        }
+
+        .project-type {
+            position: relative;
+
+            color: var(--blue);
+
+            font-family:
+                "Courier New",
+                monospace;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+        .project-card h3 {
+            position: relative;
+
+            margin: 22px 0 15px;
+
+            font-size:
+                clamp(
+                    27px,
+                    3vw,
+                    36px
+                );
+
+            line-height: 1.15;
+        }
+
+        .project-card p {
+            position: relative;
+
+            margin: 0;
+
+            color: var(--text-soft);
+
+            font-size: 17px;
+            line-height: 1.75;
+        }
+
+        .project-tags {
+            position: relative;
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: 27px;
+        }
+
+        .project-tags span {
+            padding: 7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 7px;
+
+            color: #b9c6d4;
+
+            background:
+                rgba(255,255,255,0.025);
+
+            font-size: 14px;
+        }
+
+        .project-footer {
+            position: relative;
+
+            margin-top: auto;
+            padding-top: 32px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 15px;
+        }
+
+        .project-status {
+            color: var(--green);
+
+            font-family:
+                "Courier New",
+                monospace;
+
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .project-link {
+            color: white;
+
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .project-link span {
+            color: var(--blue);
+
+            margin-left: 5px;
+        }
+
+
+        /* =========================================================
+           TECHNOLOGIES
+           ========================================================= */
+
+        .technology-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 18px;
+
+            margin-top: 55px;
+        }
+
+        .technology-group {
+            padding: 31px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 17px;
+
+            background:
+                rgba(13,21,32,0.74);
+        }
+
+        .technology-group h3 {
+            margin: 0 0 22px;
+
+            font-size: 23px;
+        }
+
+        .technology-group h3 span {
+            color: var(--blue);
+
+            margin-right: 8px;
+
+            font-family:
+                "Courier New",
+                monospace;
+        }
+
+        .technology-list {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 9px;
+        }
+
+        .technology-list span {
+            padding: 9px 12px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 8px;
+
+            color: var(--text-soft);
+
+            background:
+                rgba(255,255,255,0.025);
+
+            font-size: 15px;
+        }
+
+
+        /* =========================================================
+           CREDENTIALS
+           ========================================================= */
+
+        .credentials {
+            border-top:
+                1px solid var(--border);
+
+            border-bottom:
+                1px solid var(--border);
+
+            background:
+                rgba(8,13,21,0.45);
+        }
+
+        .credentials-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 22px;
+
+            margin-top: 55px;
+        }
+
+        .credential-box {
+            padding: 35px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 18px;
+
+            background:
+                rgba(13,21,32,0.82);
+        }
+
+        .credential-box h3 {
+            margin: 0 0 12px;
+
+            font-size: 28px;
+        }
+
+        .credential-box > p {
+            margin: 0 0 28px;
+
+            color: var(--muted);
+
+            font-size: 16px;
+        }
+
+        .credential {
+            padding: 20px 0;
+
+            border-top:
+                1px solid var(--border);
+        }
+
+        .credential strong {
+            display: block;
+
+            font-size: 18px;
+        }
+
+        .credential span {
+            display: block;
+
+            margin-top: 5px;
+
+            color: var(--muted);
+
+            font-size: 15px;
+        }
+
+        .credential .status {
+            display: inline-block;
+
+            margin-top: 9px;
+
+            color: var(--green);
+
+            font-family:
+                "Courier New",
+                monospace;
+
+            font-size: 13px;
+
+            font-weight: 700;
+        }
+
+        .credential .progress {
+            color: #fbbf24;
+        }
+
+
+        /* =========================================================
+           ABOUT
+           ========================================================= */
+
+        .about-grid {
+            display: grid;
+
+            grid-template-columns:
+                0.85fr 1.15fr;
+
+            gap: 80px;
+
+            align-items: start;
+        }
+
+        .about-heading {
+            position: sticky;
+            top: 130px;
+        }
+
+        .about-heading h2 {
+            margin: 0;
+
+            font-size:
+                clamp(
+                    43px,
+                    5vw,
+                    67px
+                );
+
+            line-height: 1.05;
+
+            letter-spacing: -2px;
+        }
+
+        .about-copy p {
+            margin: 0 0 24px;
+
+            color: var(--text-soft);
+
+            font-size: 19px;
+            line-height: 1.9;
+        }
+
+        .about-copy strong {
+            color: white;
+        }
+
+        .about-principle {
+            margin-top: 35px;
+
+            padding: 27px 30px;
+
+            border-left:
+                3px solid var(--blue);
+
+            border-radius:
+                0 12px 12px 0;
+
+            background:
+                rgba(56,189,248,0.055);
+
+            color: #dbe8f3;
+
+            font-size: 19px;
+        }
+
+
+        /* =========================================================
+           CTA
+           ========================================================= */
+
+        .cta {
+            padding-top: 40px;
+        }
+
+        .cta-box {
+            position: relative;
+
+            min-height: 340px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 45px;
+
+            padding: 55px;
+
+            overflow: hidden;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 22px;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(56,189,248,0.14),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 70% 100%,
+                    rgba(139,92,246,0.10),
+                    transparent 30%
+                ),
+                #0c141f;
+        }
+
+        .cta-box::after {
+            content: "RA";
+
+            position: absolute;
+
+            right: 20px;
+            bottom: -80px;
+
+            color:
+                rgba(255,255,255,0.018);
+
+            font-size: 300px;
+            font-weight: 900;
+
+            line-height: 1;
+
+            pointer-events: none;
+        }
+
+        .cta-content {
+            position: relative;
+
+            z-index: 2;
+        }
+
+        .cta h2 {
+            max-width: 700px;
+
+            margin: 0;
+
+            font-size:
+                clamp(
+                    40px,
+                    5vw,
+                    64px
+                );
+
+            line-height: 1.05;
+
+            letter-spacing: -2px;
+        }
+
+        .cta p {
+            max-width: 650px;
+
+            margin: 20px 0 0;
+
+            color: var(--text-soft);
+
+            font-size: 18px;
+        }
+
+        .cta-actions {
+            position: relative;
+
+            z-index: 2;
+
+            flex-shrink: 0;
+        }
+
+
+        /* =========================================================
+           FOOTER
+           ========================================================= */
+
+        footer {
+            margin-top: 100px;
+
+            border-top:
+                1px solid var(--border);
+        }
+
+        .footer-inner {
+            min-height: 130px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 25px;
+
+            color: var(--muted);
+
+            font-size: 14px;
+        }
+
+        .footer-brand strong {
+            display: block;
+
+            color: white;
+
+            font-size: 17px;
+
+            letter-spacing: 1px;
+        }
+
+        .footer-brand span {
+            display: block;
+
+            margin-top: 4px;
+
+            font-family:
+                "Courier New",
+                monospace;
+        }
+
+        .footer-center {
+            font-family:
+                "Courier New",
+                monospace;
+
+            letter-spacing: 1.5px;
+        }
+
+        .footer-online {
+            display: flex;
+            align-items: center;
+
+            gap: 8px;
+
+            color: var(--green);
+
+            font-family:
+                "Courier New",
+                monospace;
+        }
+
+
+        /* =========================================================
+           SCROLL REVEAL
+           ========================================================= */
+
+        .reveal {
+            opacity: 0;
+
+            transform:
+                translateY(25px);
+
+            transition:
+                opacity 700ms ease,
+                transform 700ms ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+
+            transform: translateY(0);
+        }
+
+
+        /* =========================================================
+           RESPONSIVE
+           ========================================================= */
+
+        @media (max-width: 1050px) {
+
+            nav,
+            .availability {
+                display: none;
+            }
+
+            .menu-button {
+                display: flex;
+
+                margin-left: auto;
+            }
+
+            nav.mobile-open {
+                position: absolute;
+
+                left: 24px;
+                right: 24px;
+                top: 95px;
+
+                display: flex;
+
+                flex-direction: column;
+                align-items: stretch;
+
+                gap: 0;
+
+                padding: 14px;
+
+                border:
+                    1px solid var(--border);
+
+                border-radius: 14px;
+
+                background:
+                    rgba(8,13,21,0.98);
+
+                box-shadow:
+                    0 25px 70px rgba(0,0,0,0.45);
+            }
+
+            nav.mobile-open a {
+                padding: 14px;
+
+                border-radius: 8px;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-card {
+                max-width: 700px;
+            }
+
+            .capability-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .technology-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+
+                gap: 40px;
+            }
+
+            .about-heading {
+                position: static;
+            }
+
+            .cta-box {
+                display: block;
+            }
+
+            .cta-actions {
+                margin-top: 30px;
+            }
+        }
+
+
+        @media (max-width: 760px) {
+
+            .container {
+                width:
+                    min(
+                        100% - 30px,
+                        var(--max-width)
+                    );
+            }
+
+            section {
+                padding: 75px 0;
+            }
+
+            .nav {
+                min-height: 72px;
+            }
+
+            .brand-text span {
+                display: none;
+            }
+
+            .hero {
+                min-height: auto;
+
+                padding: 75px 0;
+            }
+
+            .hero-grid {
+                gap: 45px;
+            }
+
+            .hero h1 {
+                font-size:
+                    clamp(
+                        55px,
+                        17vw,
+                        78px
+                    );
+
+                letter-spacing: -4px;
+            }
+
+            .hero-role {
+                font-size: 23px;
+            }
+
+            .hero-description {
+                font-size: 17px;
+            }
+
+            .hero-actions {
+                display: grid;
+
+                grid-template-columns: 1fr;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .hero-card {
+                padding: 26px;
+            }
+
+            .capability-grid,
+            .project-grid,
+            .technology-grid,
+            .credentials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .capability {
+                min-height: auto;
+            }
+
+            .project-card {
+                min-height: 380px;
+
+                padding: 27px;
+            }
+
+            .section-title {
+                font-size:
+                    clamp(
+                        37px,
+                        11vw,
+                        52px
+                    );
+            }
+
+            .section-intro {
+                font-size: 17px;
+            }
+
+            .about-heading h2 {
+                font-size:
+                    clamp(
+                        39px,
+                        11vw,
+                        54px
+                    );
+            }
+
+            .about-copy p {
+                font-size: 17px;
+            }
+
+            .cta-box {
+                padding: 36px 27px;
+            }
+
+            .cta h2 {
+                font-size:
+                    clamp(
+                        38px,
+                        11vw,
+                        52px
+                    );
+            }
+
+            .footer-inner {
+                min-height: 180px;
+
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            .footer-center {
+                display: none;
+            }
+        }
+
+
+        @media (max-width: 430px) {
+
+            .brand-text strong {
+                font-size: 15px;
+            }
+
+            .logo {
+                width: 41px;
+                height: 41px;
+            }
+
+            .hero h1 {
+                font-size: 53px;
+            }
+
+            .hero-tag {
+                font-size: 11px;
+            }
+
+            .section-tag {
+                font-size: 12px;
+            }
+
+            .technology-group {
+                padding: 24px;
+            }
+
+            .credential-box {
+                padding: 26px;
+            }
+        }
+
+
+        /* =========================================================
+           ACCESSIBILITY
+           ========================================================= */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+
+                animation-duration: 0.01ms !important;
+
+                animation-iteration-count: 1 !important;
+
+                transition-duration: 0.01ms !important;
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+    </style>
 </head>
 
 
 <body>
 
-    <!-- =========================================================
-         BACKGROUND EFFECTS
-         Controlled by style.css / script.js
-         ========================================================= -->
 
-    <div
-        class="background-grid"
-        aria-hidden="true"
-    ></div>
+<!-- =============================================================
+     NAVIGATION
+     ============================================================= -->
 
-    <div
-        class="cursor-glow"
-        id="cursorGlow"
-        aria-hidden="true"
-    ></div>
+<header>
 
+    <div class="container nav">
 
-    <!-- =========================================================
-         APPLICATION SHELL
-         ========================================================= -->
+        <a class="brand" href="#home">
 
-    <div class="site-shell">
-
-
-        <!-- =====================================================
-             TOP NAVIGATION
-             ===================================================== -->
-
-        <header class="topbar">
-
-            <!-- Brand -->
-            <a
-                href="#home"
-                class="brand"
-                aria-label="RayAutonomy Home"
-            >
-
-                <div class="brand-logo">
-                    <span>RA</span>
-                </div>
-
-                <div class="brand-copy">
-
-                    <strong>
-                        RAYAUTONOMY
-                    </strong>
-
-                    <span>
-                        SECURITY // INFRASTRUCTURE // AI
-                    </span>
-
-                </div>
-
-            </a>
-
-
-            <!-- Desktop Navigation -->
-            <nav
-                class="desktop-nav"
-                aria-label="Primary navigation"
-            >
-
-                <a
-                    href="#home"
-                    class="nav-link active"
-                >
-                    Command Center
-                </a>
-
-                <a
-                    href="#projects"
-                    class="nav-link"
-                >
-                    Projects
-                </a>
-
-                <a
-                    href="#labs"
-                    class="nav-link"
-                >
-                    Labs
-                </a>
-
-                <a
-                    href="#technologies"
-                    class="nav-link"
-                >
-                    Technologies
-                </a>
-
-                <a
-                    href="#credentials"
-                    class="nav-link"
-                >
-                    Credentials
-                </a>
-
-                <a
-                    href="#about"
-                    class="nav-link"
-                >
-                    About
-                </a>
-
-            </nav>
-
-
-            <!-- Availability -->
-            <div class="availability">
-
-                <span class="status-indicator"></span>
-
-                <span>
-                    AVAILABLE FOR OPPORTUNITIES
-                </span>
-
+            <div class="logo">
+                RA
             </div>
 
+            <div class="brand-text">
+                <strong>RAYAUTONOMY</strong>
+                <span>BUILD // DEFEND // AUTOMATE</span>
+            </div>
 
-            <!-- Mobile Menu Button -->
-            <button
-                class="mobile-menu-button"
-                id="mobileMenuButton"
-                type="button"
-                aria-label="Open navigation"
-                aria-expanded="false"
-            >
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </button>
-
-        </header>
+        </a>
 
 
-        <!-- Mobile Navigation -->
-        <nav
-            class="mobile-nav"
-            id="mobileNav"
-            aria-label="Mobile navigation"
-        >
+        <nav id="mainNav">
 
-            <a href="#home">
-                Command Center
-            </a>
-
-            <a href="#projects">
+            <a href="#work">
                 Projects
             </a>
 
-            <a href="#labs">
-                Labs
-            </a>
-
-            <a href="#technologies">
+            <a href="#technology">
                 Technologies
             </a>
 
@@ -232,1684 +1784,1152 @@
                 About
             </a>
 
-            <a href="#contact">
-                Contact
-            </a>
-
         </nav>
 
 
+        <div class="availability">
 
-        <!-- =====================================================
-             MAIN CONTENT
-             ===================================================== -->
+            <span class="availability-dot"></span>
 
-        <main>
+            AVAILABLE FOR OPPORTUNITIES
 
-
-            <!-- =================================================
-                 HERO / COMMAND CENTER
-                 ================================================= -->
-
-            <section
-                class="hero reveal"
-                id="home"
-            >
+        </div>
 
 
-                <!-- Hero Copy -->
-                <div class="hero-content">
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open navigation"
+        >
+            ☰
+        </button>
 
-                    <div class="section-label">
-                        RAYAUTONOMY // COMMAND CENTER
-                    </div>
+    </div>
 
-
-                    <p class="hero-introduction">
-                        Hello, I'm
-                    </p>
-
-
-                    <h1>
-                        RAYMOND
-                        <span>
-                            VALENTIN
-                        </span>
-                    </h1>
-
-
-                    <h2>
-                        Cybersecurity
-                        <span>•</span>
-                        Network Engineering
-                        <span>•</span>
-                        Cloud
-                        <span>•</span>
-                        AI
-                    </h2>
-
-
-                    <div class="hero-statement">
-
-                        <span>
-                            BUILD.
-                        </span>
-
-                        <span>
-                            DEFEND.
-                        </span>
-
-                        <span>
-                            AUTOMATE.
-                        </span>
-
-                    </div>
-
-
-                    <p class="hero-description">
-                        A hands-on technology portfolio documenting
-                        cybersecurity operations, enterprise networking,
-                        cloud security, automation, artificial intelligence,
-                        technical labs, and real-world engineering experience.
-                    </p>
-
-
-                    <!-- Hero Actions -->
-                    <div class="hero-actions">
-
-                        <a
-                            href="#projects"
-                            class="button button-primary"
-                        >
-                            Explore Projects
-                            <span aria-hidden="true">→</span>
-                        </a>
-
-
-                        <a
-                            href="https://github.com/RayValentin"
-                            class="button button-secondary"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            GitHub
-                            <span aria-hidden="true">↗</span>
-                        </a>
-
-
-                        <a
-                            href="#about"
-                            class="button button-secondary"
-                        >
-                            About Me
-                        </a>
-
-                    </div>
-
-                </div>
+</header>
 
 
 
-                <!-- =================================================
-                     TERMINAL
-                     ================================================= -->
+<main>
 
-                <div
-                    class="terminal-window"
-                    aria-label="RayAutonomy terminal"
+
+<!-- =============================================================
+     HERO
+     ============================================================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+
+            <div class="hero-tag">
+                <span></span>
+                RAYAUTONOMY // PROFESSIONAL PORTFOLIO
+            </div>
+
+
+            <h1>
+                RAYMOND
+                <span>VALENTIN</span>
+            </h1>
+
+
+            <div class="hero-role">
+                Cybersecurity • Networking • Cloud • Automation
+            </div>
+
+
+            <p class="hero-description">
+
+                A hands-on technology portfolio focused on
+                cybersecurity operations, enterprise networking,
+                cloud security, infrastructure, automation and
+                artificial intelligence.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+                <a
+                    class="btn btn-primary"
+                    href="#work"
                 >
+                    Explore My Work
+                    <span>→</span>
+                </a>
 
-                    <div class="terminal-header">
 
-                        <div class="terminal-controls">
+                <a
+                    class="btn"
+                    href="https://github.com/RayValentin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                    <span>↗</span>
+                </a>
 
-                            <span></span>
-                            <span></span>
-                            <span></span>
 
-                        </div>
+                <a
+                    class="btn"
+                    href="#about"
+                >
+                    About Me
+                </a>
 
-                        <span class="terminal-title">
-                            rayautonomy://portfolio
-                        </span>
+            </div>
 
-                        <span class="terminal-status">
-                            SECURE
-                        </span>
+        </div>
 
-                    </div>
 
 
-                    <div class="terminal-body">
+        <aside class="hero-card">
 
+            <div class="card-label">
+                PROFILE // STATUS
+            </div>
 
-                        <div class="terminal-line">
+            <h2>
+                Technology Professional
+            </h2>
 
-                            <span class="terminal-prompt">
-                                ray@autonomy:~$
-                            </span>
+            <p>
+                Engineering beyond the résumé.
+            </p>
 
-                            <span>
-                                whoami
-                            </span>
 
-                        </div>
-
-
-                        <div class="terminal-output terminal-success">
-                            Raymond Valentin
-                        </div>
-
-
-
-                        <div class="terminal-line">
-
-                            <span class="terminal-prompt">
-                                ray@autonomy:~$
-                            </span>
-
-                            <span>
-                                focus --list
-                            </span>
-
-                        </div>
-
-
-                        <div class="terminal-output">
-                            [01] Security Operations
-                        </div>
-
-                        <div class="terminal-output">
-                            [02] Network Engineering
-                        </div>
-
-                        <div class="terminal-output">
-                            [03] Cloud Security
-                        </div>
-
-                        <div class="terminal-output">
-                            [04] Automation
-                        </div>
-
-                        <div class="terminal-output">
-                            [05] Artificial Intelligence
-                        </div>
-
-
-
-                        <div class="terminal-line">
-
-                            <span class="terminal-prompt">
-                                ray@autonomy:~$
-                            </span>
-
-                            <span>
-                                portfolio --status
-                            </span>
-
-                        </div>
-
-
-                        <div class="terminal-output terminal-accent">
-                            SYSTEM ONLINE // BUILDING CONTINUOUSLY
-                        </div>
-
-
-
-                        <div class="terminal-line">
-
-                            <span class="terminal-prompt">
-                                ray@autonomy:~$
-                            </span>
-
-                            <span
-                                class="terminal-cursor"
-                                aria-hidden="true"
-                            ></span>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-
-            <!-- =================================================
-                 PORTFOLIO STATUS STRIP
-                 ================================================= -->
-
-            <section
-                class="status-grid reveal"
-                aria-label="Portfolio focus areas"
-            >
-
-
-                <article class="status-card">
-
-                    <span class="status-card-label">
-                        PRIMARY TRACK
-                    </span>
-
-                    <strong>
-                        SOC
-                    </strong>
-
-                    <span class="status-card-description">
-                        Security Operations
-                    </span>
-
-                </article>
-
-
-
-                <article class="status-card">
-
-                    <span class="status-card-label">
-                        INFRASTRUCTURE
-                    </span>
-
-                    <strong>
-                        NET
-                    </strong>
-
-                    <span class="status-card-description">
-                        Enterprise Networking
-                    </span>
-
-                </article>
-
-
-
-                <article class="status-card">
-
-                    <span class="status-card-label">
-                        CLOUD
-                    </span>
-
-                    <strong>
-                        AWS
-                    </strong>
-
-                    <span class="status-card-description">
-                        Cloud + Security
-                    </span>
-
-                </article>
-
-
-
-                <article class="status-card">
-
-                    <span class="status-card-label">
-                        ENGINEERING
-                    </span>
-
-                    <strong>
-                        AUTO
-                    </strong>
-
-                    <span class="status-card-description">
-                        Automation + Scripting
-                    </span>
-
-                </article>
-
-
-
-                <article class="status-card">
-
-                    <span class="status-card-label">
-                        EMERGING TECH
-                    </span>
-
-                    <strong>
-                        AI
-                    </strong>
-
-                    <span class="status-card-description">
-                        Artificial Intelligence
-                    </span>
-
-                </article>
-
-
-            </section>
-
-
-
-            <!-- =================================================
-                 OPERATIONS OVERVIEW
-                 ================================================= -->
-
-            <section
-                class="content-section reveal"
-                id="labs"
-            >
-
-                <div class="section-heading">
-
-                    <div>
-
-                        <span class="section-kicker">
-                            01 // OPERATIONS
-                        </span>
-
-                        <h2>
-                            Engineering Command Center
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        Technical disciplines represented throughout
-                        my hands-on portfolio.
-                    </p>
-
-                </div>
-
-
-
-                <div class="operations-grid">
-
-
-                    <!-- Security Operations -->
-                    <article class="dashboard-panel">
-
-                        <div class="panel-header">
-
-                            <div>
-
-                                <span class="panel-eyebrow">
-                                    DOMAIN
-                                </span>
-
-                                <h3>
-                                    Security Operations
-                                </h3>
-
-                            </div>
-
-                            <span class="panel-badge">
-                                SOC
-                            </span>
-
-                        </div>
-
-
-                        <div class="domain-list">
-
-                            <div class="domain-row">
-
-                                <span>
-                                    Threat Detection
-                                </span>
-
-                                <strong>
-                                    ACTIVE
-                                </strong>
-
-                            </div>
-
-
-                            <div class="domain-row">
-
-                                <span>
-                                    Log Analysis
-                                </span>
-
-                                <strong>
-                                    ACTIVE
-                                </strong>
-
-                            </div>
-
-
-                            <div class="domain-row">
-
-                                <span>
-                                    Incident Investigation
-                                </span>
-
-                                <strong>
-                                    LABS
-                                </strong>
-
-                            </div>
-
-
-                            <div class="domain-row">
-
-                                <span>
-                                    Vulnerability Management
-                                </span>
-
-                                <strong>
-                                    LABS
-                                </strong>
-
-                            </div>
-
-
-                            <div class="domain-row">
-
-                                <span>
-                                    SIEM Engineering
-                                </span>
-
-                                <strong>
-                                    BUILDING
-                                </strong>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- Technology Topology -->
-                    <article class="dashboard-panel topology-panel">
-
-                        <div class="panel-header">
-
-                            <div>
-
-                                <span class="panel-eyebrow">
-                                    TECHNOLOGY MAP
-                                </span>
-
-                                <h3>
-                                    Engineering Topology
-                                </h3>
-
-                            </div>
-
-                            <span class="live-indicator">
-                                <span></span>
-                                LIVE
-                            </span>
-
-                        </div>
-
-
-                        <div class="topology">
-
-                            <div class="topology-ring ring-one"></div>
-
-                            <div class="topology-ring ring-two"></div>
-
-
-                            <div class="topology-node topology-center">
-                                RAY
-                            </div>
-
-
-                            <div class="topology-node node-sentinel">
-                                SIEM
-                            </div>
-
-
-                            <div class="topology-node node-cloud">
-                                CLOUD
-                            </div>
-
-
-                            <div class="topology-node node-network">
-                                NET
-                            </div>
-
-
-                            <div class="topology-node node-linux">
-                                LINUX
-                            </div>
-
-
-                            <div class="topology-node node-ai">
-                                AI
-                            </div>
-
-
-                            <div class="topology-node node-auto">
-                                AUTO
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- Infrastructure -->
-                    <article class="dashboard-panel">
-
-                        <div class="panel-header">
-
-                            <div>
-
-                                <span class="panel-eyebrow">
-                                    DOMAIN
-                                </span>
-
-                                <h3>
-                                    Infrastructure
-                                </h3>
-
-                            </div>
-
-                            <span class="panel-badge">
-                                NET
-                            </span>
-
-                        </div>
-
-
-                        <div class="domain-list">
-
-                            <div class="domain-row">
-
-                                <span>
-                                    Routing & Switching
-                                </span>
-
-                                <strong>
-                                    ACTIVE
-                                </strong>
-
-                            </div>
-
-
-                            <div class="domain-row">
-
-                                <span>
-                                    Network Troubleshooting
-                                </span>
-
-                                <strong>
-                                    ACTIVE
-                                </strong>
-
-                            </div>
-
-
-                            <div class="domain-row">
-
-                                <span>
-                                    Windows
-                                </span>
-
-                                <strong>
-                                    ACTIVE
-                                </strong>
-
-                            </div>
-
-
-                            <div class="domain-row">
-
-                                <span>
-                                    Linux
-                                </span>
-
-                                <strong>
-                                    ACTIVE
-                                </strong>
-
-                            </div>
-
-
-                            <div class="domain-row">
-
-                                <span>
-                                    Cloud Infrastructure
-                                </span>
-
-                                <strong>
-                                    BUILDING
-                                </strong>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                </div>
-
-            </section>
-
-
-
-            <!-- =================================================
-                 FEATURED PROJECTS
-                 ================================================= -->
-
-            <section
-                class="content-section reveal"
-                id="projects"
-            >
-
-                <div class="section-heading">
-
-                    <div>
-
-                        <span class="section-kicker">
-                            02 // PROOF OF WORK
-                        </span>
-
-                        <h2>
-                            Featured Projects
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        Hands-on projects, technical labs,
-                        investigations and engineering exercises.
-                    </p>
-
-                </div>
-
-
-
-                <div class="projects-list">
-
-
-                    <!-- Project 01 -->
-                    <a
-                        href="#"
-                        class="project-row"
-                    >
-
-                        <span class="project-number">
-                            01
-                        </span>
-
-
-                        <div class="project-main">
-
-                            <span class="project-category">
-                                SECURITY OPERATIONS
-                            </span>
-
-                            <h3>
-                                Azure SOC Environment
-                            </h3>
-
-                            <p>
-                                Cloud-based security operations environment
-                                for centralized logging, monitoring,
-                                investigation and threat analysis.
-                            </p>
-
-                        </div>
-
-
-                        <div class="project-stack">
-
-                            <span>
-                                Azure
-                            </span>
-
-                            <span>
-                                Sentinel
-                            </span>
-
-                            <span>
-                                KQL
-                            </span>
-
-                        </div>
-
-
-                        <span class="project-status project-building">
-                            BUILDING
-                        </span>
-
-
-                        <span class="project-arrow">
-                            →
-                        </span>
-
-                    </a>
-
-
-
-                    <!-- Project 02 -->
-                    <a
-                        href="#"
-                        class="project-row"
-                    >
-
-                        <span class="project-number">
-                            02
-                        </span>
-
-
-                        <div class="project-main">
-
-                            <span class="project-category">
-                                VULNERABILITY MANAGEMENT
-                            </span>
-
-                            <h3>
-                                Vulnerability Management Lab
-                            </h3>
-
-                            <p>
-                                Vulnerability discovery, assessment,
-                                prioritization, remediation and
-                                validation workflow.
-                            </p>
-
-                        </div>
-
-
-                        <div class="project-stack">
-
-                            <span>
-                                Tenable
-                            </span>
-
-                            <span>
-                                Windows
-                            </span>
-
-                            <span>
-                                Azure
-                            </span>
-
-                        </div>
-
-
-                        <span class="project-status project-building">
-                            BUILDING
-                        </span>
-
-
-                        <span class="project-arrow">
-                            →
-                        </span>
-
-                    </a>
-
-
-
-                    <!-- Project 03 -->
-                    <a
-                        href="#"
-                        class="project-row"
-                    >
-
-                        <span class="project-number">
-                            03
-                        </span>
-
-
-                        <div class="project-main">
-
-                            <span class="project-category">
-                                NETWORK ENGINEERING
-                            </span>
-
-                            <h3>
-                                Enterprise Network Engineering
-                            </h3>
-
-                            <p>
-                                Routing, switching, troubleshooting,
-                                network services and infrastructure
-                                engineering documentation.
-                            </p>
-
-                        </div>
-
-
-                        <div class="project-stack">
-
-                            <span>
-                                Cisco
-                            </span>
-
-                            <span>
-                                TCP/IP
-                            </span>
-
-                            <span>
-                                Routing
-                            </span>
-
-                        </div>
-
-
-                        <span class="project-status project-active">
-                            ACTIVE
-                        </span>
-
-
-                        <span class="project-arrow">
-                            →
-                        </span>
-
-                    </a>
-
-
-
-                    <!-- Project 04 -->
-                    <a
-                        href="#"
-                        class="project-row"
-                    >
-
-                        <span class="project-number">
-                            04
-                        </span>
-
-
-                        <div class="project-main">
-
-                            <span class="project-category">
-                                AUTOMATION
-                            </span>
-
-                            <h3>
-                                Security & IT Automation
-                            </h3>
-
-                            <p>
-                                PowerShell, scripting and AI-assisted
-                                workflows designed to automate repetitive
-                                technical operations.
-                            </p>
-
-                        </div>
-
-
-                        <div class="project-stack">
-
-                            <span>
-                                PowerShell
-                            </span>
-
-                            <span>
-                                Python
-                            </span>
-
-                            <span>
-                                AI
-                            </span>
-
-                        </div>
-
-
-                        <span class="project-status project-building">
-                            BUILDING
-                        </span>
-
-
-                        <span class="project-arrow">
-                            →
-                        </span>
-
-                    </a>
-
-
-                </div>
-
-            </section>
-
-
-
-            <!-- =================================================
-                 TECHNOLOGIES
-                 ================================================= -->
-
-            <section
-                class="content-section reveal"
-                id="technologies"
-            >
-
-                <div class="section-heading">
-
-                    <div>
-
-                        <span class="section-kicker">
-                            03 // TECHNOLOGY
-                        </span>
-
-                        <h2>
-                            Technology Stack
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        Platforms and technologies represented
-                        throughout my professional experience,
-                        labs and continuing technical development.
-                    </p>
-
-                </div>
-
-
-
-                <div class="technology-grid">
-
-
-                    <article class="technology-card">
-                        <span class="technology-icon">
-                            AZ
-                        </span>
-
-                        <strong>
-                            Microsoft Azure
-                        </strong>
-
-                        <span>
-                            Cloud
-                        </span>
-                    </article>
-
-
-
-                    <article class="technology-card">
-                        <span class="technology-icon">
-                            SI
-                        </span>
-
-                        <strong>
-                            Microsoft Sentinel
-                        </strong>
-
-                        <span>
-                            SIEM
-                        </span>
-                    </article>
-
-
-
-                    <article class="technology-card">
-                        <span class="technology-icon">
-                            AWS
-                        </span>
-
-                        <strong>
-                            AWS
-                        </strong>
-
-                        <span>
-                            Cloud
-                        </span>
-                    </article>
-
-
-
-                    <article class="technology-card">
-                        <span class="technology-icon">
-                            CS
-                        </span>
-
-                        <strong>
-                            Cisco
-                        </strong>
-
-                        <span>
-                            Networking
-                        </span>
-                    </article>
-
-
-
-                    <article class="technology-card">
-                        <span class="technology-icon">
-                            LX
-                        </span>
-
-                        <strong>
-                            Linux
-                        </strong>
-
-                        <span>
-                            Systems
-                        </span>
-                    </article>
-
-
-
-                    <article class="technology-card">
-                        <span class="technology-icon">
-                            WIN
-                        </span>
-
-                        <strong>
-                            Windows
-                        </strong>
-
-                        <span>
-                            Systems
-                        </span>
-                    </article>
-
-
-
-                    <article class="technology-card">
-                        <span class="technology-icon">
-                            PS
-                        </span>
-
-                        <strong>
-                            PowerShell
-                        </strong>
-
-                        <span>
-                            Automation
-                        </span>
-                    </article>
-
-
-
-                    <article class="technology-card">
-                        <span class="technology-icon">
-                            PY
-                        </span>
-
-                        <strong>
-                            Python
-                        </strong>
-
-                        <span>
-                            Automation
-                        </span>
-                    </article>
-
-
-
-                    <article class="technology-card">
-                        <span class="technology-icon">
-                            SN
-                        </span>
-
-                        <strong>
-                            ServiceNow
-                        </strong>
-
-                        <span>
-                            ITSM
-                        </span>
-                    </article>
-
-
-
-                    <article class="technology-card">
-                        <span class="technology-icon">
-                            SP
-                        </span>
-
-                        <strong>
-                            Splunk
-                        </strong>
-
-                        <span>
-                            Security Analytics
-                        </span>
-                    </article>
-
-
-
-                    <article class="technology-card">
-                        <span class="technology-icon">
-                            TN
-                        </span>
-
-                        <strong>
-                            Tenable
-                        </strong>
-
-                        <span>
-                            Vulnerability Management
-                        </span>
-                    </article>
-
-
-
-                    <article class="technology-card">
-                        <span class="technology-icon">
-                            AI
-                        </span>
-
-                        <strong>
-                            AI Systems
-                        </strong>
-
-                        <span>
-                            Automation
-                        </span>
-                    </article>
-
-
-                </div>
-
-            </section>
-
-
-
-            <!-- =================================================
-                 CREDENTIALS
-                 ================================================= -->
-
-            <section
-                class="content-section reveal"
-                id="credentials"
-            >
-
-                <div class="section-heading">
-
-                    <div>
-
-                        <span class="section-kicker">
-                            04 // CREDENTIALS
-                        </span>
-
-                        <h2>
-                            Education & Certifications
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        Academic education and professional
-                        certifications supporting my technical career.
-                    </p>
-
-                </div>
-
-
-
-                <div class="credentials-grid">
-
-
-                    <!-- Education -->
-                    <article class="credential-panel">
-
-                        <div class="panel-header">
-
-                            <div>
-
-                                <span class="panel-eyebrow">
-                                    EDUCATION
-                                </span>
-
-                                <h3>
-                                    Academic Background
-                                </h3>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="credential-list">
-
-                            <div class="credential-row">
-
-                                <div>
-
-                                    <strong>
-                                        Master of Business Administration
-                                    </strong>
-
-                                    <span>
-                                        MBA
-                                    </span>
-
-                                </div>
-
-                                <span class="credential-state">
-                                    COMPLETED
-                                </span>
-
-                            </div>
-
-
-                            <div class="credential-row">
-
-                                <div>
-
-                                    <strong>
-                                        Master of Science in Cybersecurity
-                                    </strong>
-
-                                    <span>
-                                        Graduate Education
-                                    </span>
-
-                                </div>
-
-                                <span class="credential-state">
-                                    COMPLETED
-                                </span>
-
-                            </div>
-
-
-                            <div class="credential-row">
-
-                                <div>
-
-                                    <strong>
-                                        Master of Science in Information Technology
-                                    </strong>
-
-                                    <span>
-                                        Graduate Education
-                                    </span>
-
-                                </div>
-
-                                <span class="credential-state credential-progress">
-                                    IN PROGRESS
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- Certifications -->
-                    <article class="credential-panel">
-
-                        <div class="panel-header">
-
-                            <div>
-
-                                <span class="panel-eyebrow">
-                                    CERTIFICATIONS
-                                </span>
-
-                                <h3>
-                                    Professional Credentials
-                                </h3>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="credential-list">
-
-                            <div class="credential-row">
-
-                                <div>
-
-                                    <strong>
-                                        Certified Ethical Hacker
-                                    </strong>
-
-                                    <span>
-                                        CEH
-                                    </span>
-
-                                </div>
-
-                                <span class="credential-state">
-                                    EARNED
-                                </span>
-
-                            </div>
-
-
-                            <div class="credential-row">
-
-                                <div>
-
-                                    <strong>
-                                        Computer Hacking Forensic Investigator
-                                    </strong>
-
-                                    <span>
-                                        CHFI
-                                    </span>
-
-                                </div>
-
-                                <span class="credential-state">
-                                    EARNED
-                                </span>
-
-                            </div>
-
-
-                            <div class="credential-row">
-
-                                <div>
-
-                                    <strong>
-                                        CompTIA Security+
-                                    </strong>
-
-                                    <span>
-                                        Security
-                                    </span>
-
-                                </div>
-
-                                <span class="credential-state">
-                                    EARNED
-                                </span>
-
-                            </div>
-
-
-                            <div class="credential-row">
-
-                                <div>
-
-                                    <strong>
-                                        CompTIA Network+
-                                    </strong>
-
-                                    <span>
-                                        Networking
-                                    </span>
-
-                                </div>
-
-                                <span class="credential-state">
-                                    EARNED
-                                </span>
-
-                            </div>
-
-
-                            <div class="credential-row">
-
-                                <div>
-
-                                    <strong>
-                                        CompTIA A+
-                                    </strong>
-
-                                    <span>
-                                        IT Infrastructure
-                                    </span>
-
-                                </div>
-
-                                <span class="credential-state">
-                                    EARNED
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                </div>
-
-            </section>
-
-
-
-            <!-- =================================================
-                 ABOUT
-                 ================================================= -->
-
-            <section
-                class="content-section reveal"
-                id="about"
-            >
-
-                <div class="about-layout">
-
-
-                    <div class="about-content">
-
-                        <span class="section-kicker">
-                            05 // ABOUT
-                        </span>
-
-                        <h2>
-                            Engineering Beyond the Résumé.
-                        </h2>
-
-                        <p>
-                            I'm Raymond Valentin, a technology professional
-                            with experience spanning enterprise networking,
-                            cybersecurity operations, technical support,
-                            infrastructure and business.
-                        </p>
-
-                        <p>
-                            RayAutonomy exists as a living proof-of-work
-                            portfolio. Rather than simply listing technologies,
-                            this site documents the environments I build,
-                            problems I investigate, tools I use, and lessons
-                            learned through hands-on technical work.
-                        </p>
-
-                        <p>
-                            My current development focus includes Security
-                            Operations Center (SOC) engineering, cloud security,
-                            vulnerability management, network security,
-                            automation and artificial intelligence.
-                        </p>
-
-
-                        <div class="about-actions">
-
-                            <a
-                                href="#projects"
-                                class="button button-primary"
-                            >
-                                View My Work
-                            </a>
-
-                            <a
-                                href="https://github.com/RayValentin"
-                                class="button button-secondary"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                GitHub ↗
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <aside class="profile-panel">
-
-                        <div class="profile-panel-header">
-                            PROFILE // STATUS
-                        </div>
-
-
-                        <div class="profile-data">
-
-                            <div>
-                                <span>
-                                    NAME
-                                </span>
-
-                                <strong>
-                                    Raymond Valentin
-                                </strong>
-                            </div>
-
-
-                            <div>
-                                <span>
-                                    LOCATION
-                                </span>
-
-                                <strong>
-                                    Florida, USA
-                                </strong>
-                            </div>
-
-
-                            <div>
-                                <span>
-                                    FOCUS
-                                </span>
-
-                                <strong>
-                                    Cybersecurity / Networking
-                                </strong>
-                            </div>
-
-
-                            <div>
-                                <span>
-                                    CLOUD
-                                </span>
-
-                                <strong>
-                                    AWS / Azure
-                                </strong>
-                            </div>
-
-
-                            <div>
-                                <span>
-                                    AUTOMATION
-                                </span>
-
-                                <strong>
-                                    PowerShell / Python / AI
-                                </strong>
-                            </div>
-
-
-                            <div>
-                                <span>
-                                    PORTFOLIO
-                                </span>
-
-                                <strong class="online-text">
-                                    ONLINE
-                                </strong>
-                            </div>
-
-                        </div>
-
-                    </aside>
-
-
-                </div>
-
-            </section>
-
-
-
-            <!-- =================================================
-                 CONTACT
-                 ================================================= -->
-
-            <section
-                class="contact-section reveal"
-                id="contact"
-            >
-
-                <div>
-
-                    <span class="section-kicker">
-                        06 // CONNECT
-                    </span>
-
-                    <h2>
-                        Let's Connect.
-                    </h2>
-
-                    <p>
-                        Explore my projects, technical documentation
-                        and professional development.
-                    </p>
-
-                </div>
-
-
-                <div class="contact-actions">
-
-                    <a
-                        href="https://github.com/RayValentin"
-                        class="button button-primary"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View GitHub
-                        <span>↗</span>
-                    </a>
-
-                </div>
-
-            </section>
-
-
-        </main>
-
-
-
-        <!-- =====================================================
-             FOOTER
-             ===================================================== -->
-
-        <footer>
-
-            <div>
-
+            <div class="profile-item">
+                <span>Focus</span>
                 <strong>
-                    RAYAUTONOMY
+                    Cybersecurity & Networking
                 </strong>
+            </div>
 
-                <span>
-                    © <span id="currentYear">2026</span>
-                    Raymond Valentin
-                </span>
+
+            <div class="profile-item">
+                <span>Cloud</span>
+                <strong>
+                    AWS / Azure
+                </strong>
+            </div>
+
+
+            <div class="profile-item">
+                <span>Automation</span>
+                <strong>
+                    PowerShell / Python / AI
+                </strong>
+            </div>
+
+
+            <div class="profile-item">
+                <span>Portfolio</span>
+                <strong class="online">
+                    ONLINE
+                </strong>
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
+
+
+<!-- =============================================================
+     CAPABILITIES
+     ============================================================= -->
+
+<section class="capabilities">
+
+    <div class="container">
+
+        <div class="capability-grid">
+
+
+            <article class="capability reveal">
+
+                <div class="capability-number">
+                    01
+                </div>
+
+                <h3>
+                    Security Operations
+                </h3>
+
+                <p>
+                    Security monitoring, threat detection,
+                    vulnerability management and incident
+                    investigation.
+                </p>
+
+            </article>
+
+
+
+            <article class="capability reveal">
+
+                <div class="capability-number">
+                    02
+                </div>
+
+                <h3>
+                    Network Engineering
+                </h3>
+
+                <p>
+                    Enterprise networking, routing, switching,
+                    troubleshooting and infrastructure operations.
+                </p>
+
+            </article>
+
+
+
+            <article class="capability reveal">
+
+                <div class="capability-number">
+                    03
+                </div>
+
+                <h3>
+                    Cloud Security
+                </h3>
+
+                <p>
+                    Cloud infrastructure and security development
+                    across Microsoft Azure and AWS environments.
+                </p>
+
+            </article>
+
+
+
+            <article class="capability reveal">
+
+                <div class="capability-number">
+                    04
+                </div>
+
+                <h3>
+                    Automation & AI
+                </h3>
+
+                <p>
+                    PowerShell, Python and artificial intelligence
+                    workflows designed to improve technical
+                    operations.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =============================================================
+     FEATURED WORK
+     ============================================================= -->
+
+<section class="projects" id="work">
+
+    <div class="container">
+
+        <div class="section-tag">
+            Proof of Work
+        </div>
+
+        <h2 class="section-title">
+            Featured Project Areas
+        </h2>
+
+        <p class="section-intro">
+
+            Hands-on technical work documenting environments,
+            investigations, automation, troubleshooting and
+            engineering development.
+
+        </p>
+
+
+
+        <div class="project-grid">
+
+
+            <article class="project-card reveal">
+
+                <div class="project-type">
+                    Security Operations
+                </div>
+
+                <h3>
+                    Security Operations Labs
+                </h3>
+
+                <p>
+
+                    Practical security operations work focused on
+                    centralized logging, monitoring, threat
+                    detection, investigation and defensive
+                    security workflows.
+
+                </p>
+
+                <div class="project-tags">
+                    <span>SIEM</span>
+                    <span>Threat Detection</span>
+                    <span>Log Analysis</span>
+                </div>
+
+                <div class="project-footer">
+
+                    <span class="project-status">
+                        PORTFOLIO TRACK
+                    </span>
+
+                    <span class="project-link">
+                        Explore <span>→</span>
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="project-card reveal">
+
+                <div class="project-type">
+                    Infrastructure
+                </div>
+
+                <h3>
+                    Network & Infrastructure Labs
+                </h3>
+
+                <p>
+
+                    Enterprise networking and infrastructure
+                    exercises covering troubleshooting, network
+                    services, routing, switching, Windows and
+                    Linux environments.
+
+                </p>
+
+                <div class="project-tags">
+                    <span>Networking</span>
+                    <span>Windows</span>
+                    <span>Linux</span>
+                </div>
+
+                <div class="project-footer">
+
+                    <span class="project-status">
+                        PORTFOLIO TRACK
+                    </span>
+
+                    <span class="project-link">
+                        Explore <span>→</span>
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="project-card reveal">
+
+                <div class="project-type">
+                    Automation
+                </div>
+
+                <h3>
+                    PowerShell Automation
+                </h3>
+
+                <p>
+
+                    Scripts and workflow concepts designed to
+                    automate repetitive IT and security tasks,
+                    improve consistency and simplify technical
+                    operations.
+
+                </p>
+
+                <div class="project-tags">
+                    <span>PowerShell</span>
+                    <span>Scripting</span>
+                    <span>Automation</span>
+                </div>
+
+                <div class="project-footer">
+
+                    <span class="project-status">
+                        PORTFOLIO TRACK
+                    </span>
+
+                    <span class="project-link">
+                        Explore <span>→</span>
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="project-card reveal">
+
+                <div class="project-type">
+                    Artificial Intelligence
+                </div>
+
+                <h3>
+                    AI Workflow Utilities
+                </h3>
+
+                <p>
+
+                    Exploring practical applications of artificial
+                    intelligence for technical productivity,
+                    workflow automation and modern IT operations.
+
+                </p>
+
+                <div class="project-tags">
+                    <span>AI</span>
+                    <span>Automation</span>
+                    <span>Workflows</span>
+                </div>
+
+                <div class="project-footer">
+
+                    <span class="project-status">
+                        PORTFOLIO TRACK
+                    </span>
+
+                    <span class="project-link">
+                        Explore <span>→</span>
+                    </span>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =============================================================
+     TECHNOLOGY
+     ============================================================= -->
+
+<section id="technology">
+
+    <div class="container">
+
+        <div class="section-tag">
+            Technology
+        </div>
+
+        <h2 class="section-title">
+            Technical Foundation
+        </h2>
+
+        <p class="section-intro">
+
+            Technologies and disciplines represented throughout
+            my professional background, hands-on development and
+            continuing technical education.
+
+        </p>
+
+
+
+        <div class="technology-grid">
+
+
+            <div class="technology-group reveal">
+
+                <h3>
+                    <span>01 //</span>
+                    Security
+                </h3>
+
+                <div class="technology-list">
+                    <span>Security Operations</span>
+                    <span>Threat Detection</span>
+                    <span>Log Analysis</span>
+                    <span>Vulnerability Management</span>
+                    <span>GRC</span>
+                </div>
 
             </div>
 
 
-            <div class="footer-center">
-                BUILD // DEFEND // AUTOMATE
+
+            <div class="technology-group reveal">
+
+                <h3>
+                    <span>02 //</span>
+                    Infrastructure
+                </h3>
+
+                <div class="technology-list">
+                    <span>Cisco</span>
+                    <span>TCP/IP</span>
+                    <span>Routing</span>
+                    <span>Switching</span>
+                    <span>Windows</span>
+                    <span>Linux</span>
+                </div>
+
             </div>
 
 
-            <div class="footer-status">
 
-                <span class="status-indicator"></span>
+            <div class="technology-group reveal">
 
-                <span>
-                    SYSTEM ONLINE
-                </span>
+                <h3>
+                    <span>03 //</span>
+                    Cloud
+                </h3>
+
+                <div class="technology-list">
+                    <span>AWS</span>
+                    <span>Microsoft Azure</span>
+                    <span>Cloud Security</span>
+                    <span>Infrastructure</span>
+                </div>
 
             </div>
 
-        </footer>
+
+
+            <div class="technology-group reveal">
+
+                <h3>
+                    <span>04 //</span>
+                    Automation
+                </h3>
+
+                <div class="technology-list">
+                    <span>PowerShell</span>
+                    <span>Python</span>
+                    <span>Workflow Automation</span>
+                    <span>GitHub</span>
+                </div>
+
+            </div>
+
+
+
+            <div class="technology-group reveal">
+
+                <h3>
+                    <span>05 //</span>
+                    AI
+                </h3>
+
+                <div class="technology-list">
+                    <span>AI Workflows</span>
+                    <span>Local LLMs</span>
+                    <span>RAG Concepts</span>
+                    <span>AI Automation</span>
+                </div>
+
+            </div>
+
+
+
+            <div class="technology-group reveal">
+
+                <h3>
+                    <span>06 //</span>
+                    Operations
+                </h3>
+
+                <div class="technology-list">
+                    <span>ServiceNow</span>
+                    <span>Technical Support</span>
+                    <span>Troubleshooting</span>
+                    <span>Documentation</span>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =============================================================
+     CREDENTIALS
+     ============================================================= -->
+
+<section
+    class="credentials"
+    id="credentials"
+>
+
+    <div class="container">
+
+        <div class="section-tag">
+            Credentials
+        </div>
+
+        <h2 class="section-title">
+            Education & Certifications
+        </h2>
+
+        <p class="section-intro">
+
+            Academic education and professional certifications
+            supporting my technical career and continued
+            professional development.
+
+        </p>
+
+
+
+        <div class="credentials-grid">
+
+
+            <div class="credential-box reveal">
+
+                <h3>
+                    Education
+                </h3>
+
+                <p>
+                    Academic background
+                </p>
+
+
+                <div class="credential">
+
+                    <strong>
+                        Master of Business Administration
+                    </strong>
+
+                    <span>
+                        MBA
+                    </span>
+
+                    <span class="status">
+                        COMPLETED
+                    </span>
+
+                </div>
+
+
+                <div class="credential">
+
+                    <strong>
+                        Master of Science in Cybersecurity
+                    </strong>
+
+                    <span>
+                        Graduate Education
+                    </span>
+
+                    <span class="status">
+                        COMPLETED
+                    </span>
+
+                </div>
+
+
+                <div class="credential">
+
+                    <strong>
+                        Master of Science in Information Technology
+                    </strong>
+
+                    <span>
+                        Graduate Education
+                    </span>
+
+                    <span class="status progress">
+                        IN PROGRESS
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="credential-box reveal">
+
+                <h3>
+                    Certifications
+                </h3>
+
+                <p>
+                    Professional credentials
+                </p>
+
+
+                <div class="credential">
+
+                    <strong>
+                        Certified Ethical Hacker
+                    </strong>
+
+                    <span>
+                        CEH
+                    </span>
+
+                    <span class="status">
+                        EARNED
+                    </span>
+
+                </div>
+
+
+                <div class="credential">
+
+                    <strong>
+                        Computer Hacking Forensic Investigator
+                    </strong>
+
+                    <span>
+                        CHFI
+                    </span>
+
+                    <span class="status">
+                        EARNED
+                    </span>
+
+                </div>
+
+
+                <div class="credential">
+
+                    <strong>
+                        CompTIA Security+
+                    </strong>
+
+                    <span>
+                        Security
+                    </span>
+
+                    <span class="status">
+                        EARNED
+                    </span>
+
+                </div>
+
+
+                <div class="credential">
+
+                    <strong>
+                        CompTIA Network+
+                    </strong>
+
+                    <span>
+                        Networking
+                    </span>
+
+                    <span class="status">
+                        EARNED
+                    </span>
+
+                </div>
+
+
+                <div class="credential">
+
+                    <strong>
+                        CompTIA A+
+                    </strong>
+
+                    <span>
+                        IT Infrastructure
+                    </span>
+
+                    <span class="status">
+                        EARNED
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =============================================================
+     ABOUT
+     ============================================================= -->
+
+<section id="about">
+
+    <div class="container about-grid">
+
+
+        <div class="about-heading">
+
+            <div class="section-tag">
+                About
+            </div>
+
+            <h2>
+                Engineering Beyond the Résumé.
+            </h2>
+
+        </div>
+
+
+
+        <div class="about-copy">
+
+            <p>
+
+                I'm <strong>Raymond Valentin</strong>, a technology
+                professional with experience spanning enterprise
+                networking, cybersecurity operations, technical
+                support, infrastructure and business.
+
+            </p>
+
+
+            <p>
+
+                <strong>RayAutonomy</strong> is my professional
+                proof-of-work portfolio. It provides a place to
+                document technical labs, projects, investigations,
+                automation and continued development beyond what
+                can fit on a traditional résumé.
+
+            </p>
+
+
+            <p>
+
+                My current development focus includes security
+                operations, network security, cloud security,
+                vulnerability management, automation and
+                artificial intelligence.
+
+            </p>
+
+
+            <div class="about-principle">
+
+                <strong>BUILD // DEFEND // AUTOMATE</strong><br>
+
+                Technical knowledge becomes more valuable when it
+                can be built, tested, documented and demonstrated.
+
+            </div>
+
+
+            <div class="hero-actions">
+
+                <a
+                    class="btn btn-primary"
+                    href="#work"
+                >
+                    View My Work
+                    <span>→</span>
+                </a>
+
+                <a
+                    class="btn"
+                    href="https://github.com/RayValentin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </div>
 
 
     </div>
 
+</section>
 
-    <!-- =========================================================
-         JAVASCRIPT
-         Loaded last for performance
-         ========================================================= -->
 
-    <script src="script.js"></script>
+
+<!-- =============================================================
+     CTA
+     ============================================================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box reveal">
+
+
+            <div class="cta-content">
+
+                <div class="section-tag">
+                    Connect
+                </div>
+
+                <h2>
+                    Explore the Work Behind the Résumé.
+                </h2>
+
+                <p>
+
+                    Visit my GitHub profile to explore technical
+                    projects, labs, scripts, documentation and
+                    continued development.
+
+                </p>
+
+            </div>
+
+
+            <div class="cta-actions">
+
+                <a
+                    class="btn btn-primary"
+                    href="https://github.com/RayValentin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View GitHub
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =============================================================
+     FOOTER
+     ============================================================= -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+
+        <div class="footer-brand">
+
+            <strong>
+                RAYAUTONOMY
+            </strong>
+
+            <span>
+                © 2026 Raymond Valentin
+            </span>
+
+        </div>
+
+
+        <div class="footer-center">
+            BUILD // DEFEND // AUTOMATE
+        </div>
+
+
+        <div class="footer-online">
+
+            <span class="availability-dot"></span>
+
+            PORTFOLIO ONLINE
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+
+<!-- =============================================================
+     JAVASCRIPT
+     ============================================================= -->
+
+<script>
+
+    /* =============================================================
+       MOBILE NAVIGATION
+       ============================================================= */
+
+    const menuButton =
+        document.getElementById("menuButton");
+
+    const mainNav =
+        document.getElementById("mainNav");
+
+
+    menuButton.addEventListener(
+        "click",
+        () => {
+
+            mainNav.classList.toggle(
+                "mobile-open"
+            );
+
+            menuButton.textContent =
+                mainNav.classList.contains(
+                    "mobile-open"
+                )
+                ? "✕"
+                : "☰";
+
+        }
+    );
+
+
+    mainNav
+        .querySelectorAll("a")
+        .forEach(link => {
+
+            link.addEventListener(
+                "click",
+                () => {
+
+                    mainNav.classList.remove(
+                        "mobile-open"
+                    );
+
+                    menuButton.textContent =
+                        "☰";
+
+                }
+            );
+
+        });
+
+
+
+    /* =============================================================
+       SCROLL REVEAL
+       ============================================================= */
+
+    const revealElements =
+        document.querySelectorAll(
+            ".reveal"
+        );
+
+
+    const observer =
+        new IntersectionObserver(
+
+            entries => {
+
+                entries.forEach(
+                    entry => {
+
+                        if (
+                            entry.isIntersecting
+                        ) {
+
+                            entry.target
+                                .classList
+                                .add(
+                                    "visible"
+                                );
+
+                            observer.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    }
+                );
+
+            },
+
+            {
+                threshold: 0.12
+            }
+
+        );
+
+
+    revealElements.forEach(
+        element => {
+
+            observer.observe(
+                element
+            );
+
+        }
+    );
+
+
+
+    /* =============================================================
+       SUBTLE MOUSE GLOW
+       ============================================================= */
+
+    if (
+        window.matchMedia(
+            "(pointer: fine)"
+        ).matches
+    ) {
+
+        document.addEventListener(
+            "mousemove",
+            event => {
+
+                document.body.style
+                    .setProperty(
+                        "--mouse-x",
+                        event.clientX + "px"
+                    );
+
+                document.body.style
+                    .setProperty(
+                        "--mouse-y",
+                        event.clientY + "px"
+                    );
+
+            }
+        );
+
+    }
+
+</script>
+
 
 </body>
-
 </html>
