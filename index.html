@@ -15,7 +15,7 @@
 
 /* ============================================================
    RAYAUTONOMY
-   PROFESSIONAL SINGLE-FILE PORTFOLIO
+   SINGLE-FILE PROFESSIONAL PORTFOLIO
    ============================================================ */
 
 :root {
@@ -36,6 +36,7 @@
     --purple: #8b5cf6;
     --green: #34d399;
     --yellow: #fbbf24;
+    --youtube: #ff0033;
 
     --gradient:
         linear-gradient(
@@ -294,7 +295,7 @@ nav {
     display: flex;
     align-items: center;
 
-    gap: 25px;
+    gap: 22px;
 }
 
 nav a {
@@ -307,6 +308,14 @@ nav a {
 }
 
 nav a:hover {
+    color: white;
+}
+
+.youtube-nav {
+    color: #ffb8c5;
+}
+
+.youtube-nav:hover {
     color: white;
 }
 
@@ -387,9 +396,6 @@ nav a:hover {
     gap: 65px;
 }
 
-
-/* LEFT */
-
 .hero-kicker {
     display: inline-flex;
     align-items: center;
@@ -458,7 +464,9 @@ nav a:hover {
 }
 
 
-/* BUTTONS */
+/* ============================================================
+   BUTTONS
+   ============================================================ */
 
 .btn {
     min-height: 49px;
@@ -486,7 +494,8 @@ nav a:hover {
     transition:
         transform 180ms ease,
         border-color 180ms ease,
-        background 180ms ease;
+        background 180ms ease,
+        box-shadow 180ms ease;
 }
 
 .btn:hover {
@@ -508,6 +517,44 @@ nav a:hover {
     border-color: transparent;
 
     background: var(--gradient);
+
+    box-shadow:
+        0 8px 28px rgba(59, 130, 246, 0.25);
+}
+
+.btn-youtube {
+    border-color:
+        rgba(255, 0, 51, 0.40);
+
+    background:
+        rgba(255, 0, 51, 0.07);
+}
+
+.btn-youtube:hover {
+    border-color: var(--youtube);
+
+    background:
+        rgba(255, 0, 51, 0.13);
+
+    box-shadow:
+        0 8px 28px rgba(255, 0, 51, 0.12);
+}
+
+.youtube-icon {
+    width: 24px;
+    height: 17px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    color: white;
+
+    background: var(--youtube);
+
+    font-size: 9px;
 }
 
 
@@ -1020,6 +1067,17 @@ nav a:hover {
     font-size: 16px;
 }
 
+.cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
 
 /* ============================================================
    FOOTER
@@ -1059,10 +1117,21 @@ footer {
     margin-top: 3px;
 }
 
-.footer-center {
-    font-family: "Courier New", monospace;
+.footer-links {
+    display: flex;
+    align-items: center;
 
-    letter-spacing: 1px;
+    gap: 18px;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    color: white;
 }
 
 .footer-status {
@@ -1083,7 +1152,7 @@ footer {
    RESPONSIVE
    ============================================================ */
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
 
     nav,
     .available {
@@ -1150,6 +1219,15 @@ footer {
         grid-template-columns: 1fr;
 
         gap: 25px;
+    }
+
+    .cta-box {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .cta-actions {
+        justify-content: flex-start;
     }
 }
 
@@ -1228,27 +1306,21 @@ footer {
     }
 
     .cta-box {
-        display: block;
-
         padding: 28px 24px;
     }
 
-    .cta-box .btn {
-        margin-top: 25px;
+    .cta-actions {
+        width: 100%;
     }
 
     .footer-inner {
-        min-height: 145px;
+        min-height: 160px;
 
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
 
         gap: 10px;
-    }
-
-    .footer-center {
-        display: none;
     }
 }
 
@@ -1312,6 +1384,15 @@ footer {
 
         <a href="#about">
             About
+        </a>
+
+        <a
+            href="https://www.youtube.com/@RayAutonomy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="youtube-nav"
+        >
+            YouTube ↗
         </a>
 
     </nav>
@@ -1402,6 +1483,17 @@ footer {
 
 
             <a
+                href="https://www.youtube.com/@RayAutonomy"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-youtube"
+            >
+                <span class="youtube-icon">▶</span>
+                YouTube
+            </a>
+
+
+            <a
                 href="#about"
                 class="btn"
             >
@@ -1482,7 +1574,7 @@ footer {
 
 
 <!-- ============================================================
-     CAPABILITY STRIP
+     CAPABILITIES
      ============================================================ -->
 
 <div class="capability-strip">
@@ -1941,6 +2033,8 @@ footer {
     <div class="credentials-grid">
 
 
+        <!-- EDUCATION -->
+
         <div class="credential-card">
 
             <h3>
@@ -2006,6 +2100,8 @@ footer {
 
 
 
+        <!-- CERTIFICATIONS -->
+
         <div class="credential-card">
 
             <h3>
@@ -2013,7 +2109,7 @@ footer {
             </h3>
 
             <p>
-                Earned credentials
+                Earned credentials and current development
             </p>
 
 
@@ -2099,21 +2195,24 @@ footer {
                     EARNED
                 </span>
 
-                <div class="credential-row">
-                    
-    <strong>
-        Certified Information Systems Security Professional
-    </strong>
+            </div>
 
-    <span>
-        CISSP
-    </span>
 
-    <span class="earned progress">
-        IN PROGRESS
-    </span>
+            <!-- CISSP ADDED -->
 
-</div>
+            <div class="credential-row">
+
+                <strong>
+                    Certified Information Systems Security Professional
+                </strong>
+
+                <span>
+                    CISSP
+                </span>
+
+                <span class="earned progress">
+                    IN PROGRESS
+                </span>
 
             </div>
 
@@ -2210,7 +2309,7 @@ footer {
 
 
 <!-- ============================================================
-     CTA
+     CONNECT / CTA
      ============================================================ -->
 
 <section class="cta">
@@ -2232,23 +2331,39 @@ footer {
 
             <p>
 
-                Explore my GitHub profile for technical projects,
-                labs, scripts, documentation and continuing
-                development.
+                Explore technical projects, labs, scripts and
+                documentation on GitHub, and visit RayAutonomy
+                on YouTube for cybersecurity, networking,
+                artificial intelligence and technology content.
 
             </p>
 
         </div>
 
 
-        <a
-            href="https://github.com/RayValentin"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary"
-        >
-            View GitHub ↗
-        </a>
+        <div class="cta-actions">
+
+            <a
+                href="https://github.com/RayValentin"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+            >
+                View GitHub ↗
+            </a>
+
+
+            <a
+                href="https://www.youtube.com/@RayAutonomy"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-youtube"
+            >
+                <span class="youtube-icon">▶</span>
+                RayAutonomy YouTube
+            </a>
+
+        </div>
 
 
     </div>
@@ -2281,8 +2396,24 @@ footer {
     </div>
 
 
-    <div class="footer-center">
-        BUILD // DEFEND // AUTOMATE
+    <div class="footer-links">
+
+        <a
+            href="https://github.com/RayValentin"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub ↗
+        </a>
+
+        <a
+            href="https://www.youtube.com/@RayAutonomy"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            YouTube ↗
+        </a>
+
     </div>
 
 
